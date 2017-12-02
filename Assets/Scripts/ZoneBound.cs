@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class Bounds : MonoBehaviour
+public class ZoneBound : MonoBehaviour
 {
 	BoxCollider2D m_collider;
 	public BoxCollider2D[] m_camBounds;

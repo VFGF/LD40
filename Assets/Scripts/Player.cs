@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D coll)
 	{
-		Bounds bound = coll.transform.GetComponent<Bounds>();
+		ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
 		if (bound)
 		{
 			BoxCollider2D otherZone = null;
@@ -34,7 +34,6 @@ public class Player : MonoBehaviour
 
 			m_camera.m_currentBounds = otherZone;
 
-			Vector2 skipDir = 
 			transform.position += 
 				(otherZone.transform.position - m_currentZone.transform.position).normalized 
 				* m_zoneSkipDistance;

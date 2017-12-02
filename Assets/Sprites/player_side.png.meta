@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a207a2c842ba89c489a555596f65a287
-timeCreated: 1512249635
+timeCreated: 1512251385
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -87,7 +87,7 @@ TextureImporter:
         width: 196
         height: 234
       alignment: 9
-      pivot: {x: 0.43053108, y: 0.7036574}
+      pivot: {x: 0.43053108, y: 0.1036574}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -101,7 +101,7 @@ TextureImporter:
         width: 197
         height: 234
       alignment: 9
-      pivot: {x: 0.42258945, y: 0.7036574}
+      pivot: {x: 0.42258945, y: 0.1036574}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -115,7 +115,7 @@ TextureImporter:
         width: 189
         height: 234
       alignment: 9
-      pivot: {x: 0.41048065, y: 0.7029592}
+      pivot: {x: 0.41048065, y: 0.1029592}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,12 +124,12 @@ TextureImporter:
       name: player_side_3
       rect:
         serializedVersion: 2
-        x: 12
+        x: 13
         y: 0
         width: 263
         height: 234
       alignment: 9
-      pivot: {x: 0.586904, y: 0.7042277}
+      pivot: {x: 0.586904, y: 0.1042277}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

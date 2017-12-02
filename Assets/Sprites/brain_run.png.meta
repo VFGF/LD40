@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 0515f3c79ff0b954aaf01c55761a2bff
-timeCreated: 1512251459
+guid: 6b7830fe979e625459604c42d9ce3560
+timeCreated: 1512251499
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: player_upwalk copy_0
-    21300002: player_upwalk copy_1
-    21300004: player_upwalk copy_2
+    21300000: brain_run_0
+    21300002: brain_run_1
+    21300004: brain_run_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -48,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 987
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -78,43 +78,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_upwalk copy_0
+      name: brain_run_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 189
-        height: 231
+        width: 368
+        height: 256
       alignment: 9
-      pivot: {x: 0.450696, y: 0.0623975}
+      pivot: {x: 0.46359974, y: 0.0285334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player_upwalk copy_1
+      name: brain_run_1
       rect:
         serializedVersion: 2
-        x: 202
+        x: 369
         y: 0
-        width: 190
-        height: 231
+        width: 235
+        height: 256
       alignment: 9
-      pivot: {x: 0.45796493, y: 0.05636153}
-      border: {x: 6, y: 0, z: 0, w: 0}
+      pivot: {x: 0.48209578, y: 0.1802774}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: player_upwalk copy_2
+      name: brain_run_2
       rect:
         serializedVersion: 2
-        x: 403
+        x: 606
         y: 0
-        width: 155
-        height: 328
+        width: 381
+        height: 256
       alignment: 9
-      pivot: {x: 0.52606636, y: 0.03905005}
+      pivot: {x: 0.50471026, y: 0.019231}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

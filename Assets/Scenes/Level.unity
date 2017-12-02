@@ -2812,7 +2812,7 @@ Prefab:
     - target: {fileID: 224304172079763222, guid: 826b8aa84c694c54593c500f1a9fa1f6,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224304172079763222, guid: 826b8aa84c694c54593c500f1a9fa1f6,
         type: 2}
@@ -3005,7 +3005,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Gravestone
   m_dialogue: {fileID: 759445039}
-  m_text: Hey! You there! Come here!
+  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
+    eleifend arcu id sodales. Praesent id ligula tempor, congue turpis eget, finibus
+    velit. Sed pellentesque dapibus augue ac mattis. Ut rutrum mauris enim, quis facilisis
+    arcu efficitur ac. Donec et nisl aliquet, suscipit neque eget, fringilla dolor.
+    Phasellus consectetur est sit amet tempor lobortis. Maecenas sit amet lobortis
+    sapien, non maximus erat. Sed enim sapien, efficitur et egestas sit amet, iaculis
+    feugiat tellus. Curabitur a felis magna. Maecenas euismod porttitor porta. Morbi
+    eleifend quam a diam ultricies auctor. Proin lorem sapien, lacinia viverra rutrum
+    id, laoreet at ante. Nunc malesuada nec metus ut pellentesque. Fusce tempor, sapien
+    vitae accumsan vulputate, neque dolor accumsan metus, posuere tempor mi lacus
+    nec enim.
 --- !u!61 &769883384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5069,7 +5079,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4229401257023384, guid: 39f40c5866b4de5428ec49fe06dcb596, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 58501248872442380, guid: 39f40c5866b4de5428ec49fe06dcb596,
         type: 2}

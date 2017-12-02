@@ -10,8 +10,12 @@ public class Dialogue : MonoBehaviour
 	public TextMeshProUGUI m_text;
 	bool m_donePrinting = true;
 	bool m_paused = false;
+	int m_overflow = 0;
+	int m_totalRemoved = 0;
+	int m_readCount = 0;
+	int m_currentStart = 0;
 
-	float timer = 0.0f;
+	float m_timer = 0.0f;
 
 	void Start ()
 	{
@@ -24,45 +28,42 @@ public class Dialogue : MonoBehaviour
 
 	public void OnGUI()
 	{
-
-		if (m_paused)
+		if(m_paused)
 		{
 			if (Input.GetKeyDown(KeyCode.E))
 			{
 				m_paused = false;
-				int length = m_currentText.Length;
-				m_currentText = "" + m_printMessage[length - 1];
-				m_printMessage = m_printMessage.Remove(0, length - 1);
+				m_currentText = "";
+				m_currentStart = m_readCount;
 			}
 			else
 				return;
 		}
-		if (m_donePrinting)
-			return;
 
-		timer += Time.fixedDeltaTime;
-		if (timer >= 0.01f)
+		if(!m_donePrinting)
 		{
-			timer -= 0.01f;
-
-			if (m_currentText.Length == m_printMessage.Length)
-				m_donePrinting = true;
-
-			if (!m_donePrinting)
+			m_timer += Time.fixedDeltaTime;
+			if (m_timer >= 0.03f)
 			{
-				if (m_text.isTextOverflowing)
+				m_timer -= 0.03f;
+
+				m_currentText += m_printMessage[m_readCount++];
+
+				if (m_readCount > m_printMessage.Length - 1)
+					m_donePrinting = true;
+
+				if(m_text.isTextOverflowing)
 				{
-					m_currentText = m_currentText.Remove(m_currentText.Length - 1);
-					print(m_printMessage);
+					print("uheaedkufaef");
+					m_overflow = m_text.firstOverflowCharacterIndex + m_currentStart;
+					m_readCount = m_overflow;
+					m_currentText = m_printMessage.Substring(m_currentStart, m_readCount - m_currentStart);
 					m_paused = true;
 				}
-
-				if(!m_paused)
-					m_currentText += m_printMessage[m_currentText.Length];
 			}
 		}
 
-		m_text.SetText(m_currentText);
+		m_text.text = m_currentText;
 	}
 
 	public void PrintText(string message)
@@ -70,6 +71,7 @@ public class Dialogue : MonoBehaviour
 		m_printMessage = message;
 		m_currentText = "";
 		m_donePrinting = false;
+		m_readCount = 0;
 	}
 
 	public void ResetText()
@@ -77,5 +79,6 @@ public class Dialogue : MonoBehaviour
 		m_printMessage = "";
 		m_currentText = "";
 		m_text.text = "";
+		m_readCount = 0;
 	}
 }

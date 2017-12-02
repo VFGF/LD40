@@ -9,82 +9,82 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1453486500886430}
+  m_RootGameObject: {fileID: 1811731977776046}
   m_IsPrefabParent: 1
---- !u!1 &1453486500886430
+--- !u!1 &1811731977776046
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4883219589364620}
-  - component: {fileID: 212230899267072004}
-  - component: {fileID: 114930682768951906}
-  - component: {fileID: 61182724388924294}
+  - component: {fileID: 4671712876025498}
+  - component: {fileID: 212848718668314146}
+  - component: {fileID: 114856899445432984}
+  - component: {fileID: 61892072298703568}
   m_Layer: 0
-  m_Name: Fence
+  m_Name: Fence Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4883219589364620
+--- !u!4 &4671712876025498
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453486500886430}
+  m_GameObject: {fileID: 1811731977776046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.316, y: 1.4130001, z: 0}
+  m_LocalPosition: {x: -3.363, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61182724388924294
+--- !u!61 &61892072298703568
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453486500886430}
+  m_GameObject: {fileID: 1811731977776046}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0495885}
+  m_Offset: {x: 0.0023277998, y: -0.16993165}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3473685, y: 0.63684213}
-    newSize: {x: 2.56, y: 1.21}
+    oldSize: {x: 0.3359375, y: 0.921875}
+    newSize: {x: 0.86, y: 2.36}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3473685, y: 0.09983528}
+  m_Size: {x: 0.16367793, y: 0.20024729}
   m_EdgeRadius: 0
---- !u!114 &114930682768951906
+--- !u!114 &114856899445432984
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453486500886430}
+  m_GameObject: {fileID: 1811731977776046}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90351729e358add408714faf1a3e58ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_dynamic: 0
---- !u!212 &212230899267072004
+--- !u!212 &212848718668314146
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453486500886430}
+  m_GameObject: {fileID: 1811731977776046}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -108,15 +108,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 832587285
-  m_SortingLayer: -1
+  m_SortingLayerID: 398334499
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0859f7b6e24b46542b41b22b35bac1ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9244187bf20f374b9377ae1f704ccf4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 1.21}
+  m_Size: {x: 0.86, y: 2.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

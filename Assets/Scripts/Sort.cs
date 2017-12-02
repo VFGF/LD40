@@ -5,6 +5,9 @@ using UnityEngine;
 public class Sort : MonoBehaviour {
 	public bool m_dynamic = false;
 
+    [SerializeField]
+    private float offset;
+
 	void Start()
 	{
 		Vector3 position = transform.position;

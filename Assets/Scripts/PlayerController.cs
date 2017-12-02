@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     // Animation
     Animator m_anim;
-    public int m_direction;
+    public int m_direction = 0;
 
 
 	void Start ()
@@ -37,25 +37,22 @@ public class PlayerController : MonoBehaviour
 			horizontal, vertical);
 		m_movementDir.Normalize();
 
-        if(horizontal > Mathf.Epsilon)
-        {
-            m_direction = 0;        // Right
-            transform.localScale = new Vector2(-1f, 1f);
-        }
-        else if (horizontal < -Mathf.Epsilon)
-        {
-            m_direction = 1;        // Left
-            transform.localScale = new Vector2(1f, 1f);
-        }
-
-        else if (vertical > Mathf.Epsilon)
-        {
-            m_direction = 2;        // Up
-        }
-        else if (vertical < -Mathf.Epsilon)
-        {
-            m_direction = 3;        // Down
-        }
+		if (horizontal > Mathf.Epsilon)
+		{
+			m_direction = 1;        // Right
+			transform.localScale = new Vector2(-1f, 1f);
+		}
+		else if (horizontal < -Mathf.Epsilon)
+		{
+			m_direction = 2;        // Left
+			transform.localScale = new Vector2(1f, 1f);
+		}
+		else if (vertical > Mathf.Epsilon)
+			m_direction = 3;        // Up
+		else if (vertical < -Mathf.Epsilon)
+			m_direction = 4;        // Down
+		else
+			m_direction = 0;
 
         if(m_movementDir != Vector3.zero)
         {

@@ -13,7 +13,6 @@ public class CameraController : MonoBehaviour
 	{
 		m_player = GameObject.Find("Player").transform;
 		m_size = GetComponent<Camera>().orthographicSize;
-		m_currentBoundOrigin = m_currentBounds.transform.position;
 	}
 	
 	void Update ()
@@ -29,6 +28,7 @@ public class CameraController : MonoBehaviour
 
 	void HandleBounds()
 	{
+		m_currentBoundOrigin = m_currentBounds.transform.position;
 		Vector3 position = transform.position;
 		float xMax = m_currentBoundOrigin.x + m_currentBounds.size.x * 0.5f;
 		float xMin = m_currentBoundOrigin.x - m_currentBounds.size.x * 0.5f;

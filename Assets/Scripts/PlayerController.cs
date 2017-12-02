@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 	Vector3 m_movementDir = Vector3.zero;
 	Rigidbody2D m_rb;
 
+
 	void Start ()
 	{
 		m_rb = GetComponent<Rigidbody2D>();

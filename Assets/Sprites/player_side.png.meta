@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a207a2c842ba89c489a555596f65a287
-timeCreated: 1512231189
+timeCreated: 1512249635
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -96,7 +96,7 @@ TextureImporter:
       name: player_side_1
       rect:
         serializedVersion: 2
-        x: 480
+        x: 481
         y: 0
         width: 197
         height: 234

@@ -6995,9 +6995,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1946418971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d760a669e1eada40bf7eda3b55c023a, type: 3}
+  m_Script: {fileID: 11500000, guid: effb055e5391db043a51a6a0dadf96fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debris:
+  - {fileID: 1866374480077010, guid: 5ec57c1cd8e5bd1448f309df76701677, type: 2}
+  - {fileID: 1482061817755026, guid: 8990b134b82d0c34da4d449f75ae92ec, type: 2}
+  - {fileID: 1601814890564024, guid: 7590d515a662c5c489c0107769bc271e, type: 2}
+  - {fileID: 1942856956320112, guid: 6429dcf081b0a234ea4578e0f0bddc04, type: 2}
+  - {fileID: 1981468851219044, guid: 0e07ca85fa8d044439e7c9bc3048391f, type: 2}
+  amount: 200
+  minX: -16.6
+  maxX: 16.6
+  minY: -2.5
+  maxY: 35.8
 --- !u!1 &1970414129
 GameObject:
   m_ObjectHideFlags: 0

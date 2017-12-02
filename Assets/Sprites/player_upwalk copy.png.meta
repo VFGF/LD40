@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0515f3c79ff0b954aaf01c55761a2bff
-timeCreated: 1512238616
+timeCreated: 1512249651
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -48,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 360
+  spritePixelsToUnits: 400
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -86,7 +86,7 @@ TextureImporter:
         width: 189
         height: 231
       alignment: 9
-      pivot: {x: 0.4527778, y: 0.42272726}
+      pivot: {x: 0.450696, y: 0.56239754}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -100,7 +100,7 @@ TextureImporter:
         width: 190
         height: 231
       alignment: 9
-      pivot: {x: 0.46003577, y: 0.4120219}
+      pivot: {x: 0.45796493, y: 0.56361526}
       border: {x: 6, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -109,12 +109,12 @@ TextureImporter:
       name: player_upwalk copy_2
       rect:
         serializedVersion: 2
-        x: 402
+        x: 403
         y: 0
         width: 155
         height: 328
       alignment: 9
-      pivot: {x: 0.52606636, y: 0.29693347}
+      pivot: {x: 0.52606636, y: 0.39050052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

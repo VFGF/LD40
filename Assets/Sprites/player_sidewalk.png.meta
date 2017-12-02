@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-guid: b912c663aab57f7499384f87f8a8a785
-timeCreated: 1512219152
+guid: 49ce3c8d17a066e4b83d4b79e1205f89
+timeCreated: 1512222337
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dog_walking_0
-    21300002: dog_walking_1
-    21300004: dog_walking_2
-    21300006: dog_walking_3
-    21300008: dog_walking_4
+    21300000: player_sidewalk_0
+    21300002: player_sidewalk_1
+    21300004: player_sidewalk_2
+    21300006: player_sidewalk_3
+    21300008: player_sidewalk_4
+    21300010: player_sidewalk_5
+    21300012: player_sidewalk_6
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -50,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 431
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -80,71 +82,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dog_walking_0
+      name: player_sidewalk_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 526
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 197
+        height: 215
+      alignment: 9
+      pivot: {x: 0.524287, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dog_walking_1
+      name: player_sidewalk_1
       rect:
         serializedVersion: 2
-        x: 592
+        x: 212
         y: 0
-        width: 513
-        height: 233
+        width: 214
+        height: 215
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dog_walking_2
-      rect:
-        serializedVersion: 2
-        x: 1151
-        y: 0
-        width: 514
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dog_walking_3
-      rect:
-        serializedVersion: 2
-        x: 1693
-        y: 0
-        width: 509
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dog_walking_4
-      rect:
-        serializedVersion: 2
-        x: 2237
-        y: 0
-        width: 518
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

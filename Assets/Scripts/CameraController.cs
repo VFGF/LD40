@@ -7,12 +7,13 @@ public class CameraController : MonoBehaviour
 	Transform m_player;
 	public BoxCollider2D m_currentBounds;
 	Vector2 m_currentBoundOrigin;
-	float m_size;
+	Vector2 m_size = Vector2.zero;
 
 	void Start ()
 	{
 		m_player = GameObject.Find("Player").transform;
-		m_size = GetComponent<Camera>().orthographicSize;
+		m_size.y = GetComponent<Camera>().orthographicSize;
+		m_size.x = m_size.y * GetComponent<Camera>().aspect;
 	}
 	
 	void Update ()
@@ -35,15 +36,15 @@ public class CameraController : MonoBehaviour
 		float yMax = m_currentBoundOrigin.y + m_currentBounds.size.y * 0.5f;
 		float yMin = m_currentBoundOrigin.y - m_currentBounds.size.y * 0.5f;
 
-		if (position.x + m_size > xMax)
-			position.x = xMax - m_size;
-		else if (position.x - m_size < xMin)
-			position.x = xMin + m_size;
+		if (position.x + m_size.x > xMax)
+			position.x = xMax - m_size.x;
+		else if (position.x - m_size.x < xMin)
+			position.x = xMin + m_size.x;
 
-		if (position.y + m_size > yMax)
-			position.y = yMax - m_size;
-		else if (position.y - m_size < yMin)
-			position.y = yMin + m_size;
+		if (position.y + m_size.y > yMax)
+			position.y = yMax - m_size.y;
+		else if (position.y - m_size.y < yMin)
+			position.y = yMin + m_size.y;
 
 		transform.position = position;
 	}

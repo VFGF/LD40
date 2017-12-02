@@ -1,16 +1,9 @@
 fileFormatVersion: 2
-guid: 49ce3c8d17a066e4b83d4b79e1205f89
-timeCreated: 1512222337
+guid: 5d26b72e844db9a479a337b0860e41e9
+timeCreated: 1512228957
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: player_sidewalk_0
-    21300002: player_sidewalk_1
-    21300004: player_sidewalk_2
-    21300006: player_sidewalk_3
-    21300008: player_sidewalk_4
-    21300010: player_sidewalk_5
-    21300012: player_sidewalk_6
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -46,13 +39,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 431
+  spritePixelsToUnits: 215
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -80,35 +73,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: player_sidewalk_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 197
-        height: 215
-      alignment: 9
-      pivot: {x: 0.524287, y: 0.5}
-      border: {x: 3, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: player_sidewalk_1
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 0
-        width: 214
-        height: 215
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

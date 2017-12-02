@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-guid: b912c663aab57f7499384f87f8a8a785
-timeCreated: 1512219152
+guid: a207a2c842ba89c489a555596f65a287
+timeCreated: 1512231189
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dog_walking_0
-    21300002: dog_walking_1
-    21300004: dog_walking_2
-    21300006: dog_walking_3
-    21300008: dog_walking_4
+    21300000: player_side_0
+    21300002: player_side_1
+    21300004: player_side_2
+    21300006: player_side_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -80,71 +79,57 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dog_walking_0
+      name: player_side_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 684
         y: 0
-        width: 526
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 196
+        height: 234
+      alignment: 9
+      pivot: {x: 0.43053108, y: 0.7036574}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dog_walking_1
+      name: player_side_1
       rect:
         serializedVersion: 2
-        x: 592
+        x: 480
         y: 0
-        width: 513
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 197
+        height: 234
+      alignment: 9
+      pivot: {x: 0.42258945, y: 0.7036574}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dog_walking_2
+      name: player_side_2
       rect:
         serializedVersion: 2
-        x: 1151
+        x: 276
         y: 0
-        width: 514
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 189
+        height: 234
+      alignment: 9
+      pivot: {x: 0.41048065, y: 0.7029592}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: dog_walking_3
+      name: player_side_3
       rect:
         serializedVersion: 2
-        x: 1693
+        x: 12
         y: 0
-        width: 509
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: dog_walking_4
-      rect:
-        serializedVersion: 2
-        x: 2237
-        y: 0
-        width: 518
-        height: 233
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 263
+        height: 234
+      alignment: 9
+      pivot: {x: 0.586904, y: 0.7042277}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

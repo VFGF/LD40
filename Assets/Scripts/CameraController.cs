@@ -31,10 +31,12 @@ public class CameraController : MonoBehaviour
 	{
 		m_currentBoundOrigin = m_currentBounds.transform.position;
 		Vector3 position = transform.position;
-		float xMax = m_currentBoundOrigin.x + m_currentBounds.size.x * 0.5f;
-		float xMin = m_currentBoundOrigin.x - m_currentBounds.size.x * 0.5f;
-		float yMax = m_currentBoundOrigin.y + m_currentBounds.size.y * 0.5f;
-		float yMin = m_currentBoundOrigin.y - m_currentBounds.size.y * 0.5f;
+		float xScale = m_currentBounds.transform.localScale.x;
+		float yScale = m_currentBounds.transform.localScale.y;
+		float xMax = m_currentBoundOrigin.x + m_currentBounds.size.x * 0.5f * xScale;
+		float xMin = m_currentBoundOrigin.x - m_currentBounds.size.x * 0.5f * xScale;
+		float yMax = m_currentBoundOrigin.y + m_currentBounds.size.y * 0.5f * yScale;
+		float yMin = m_currentBoundOrigin.y - m_currentBounds.size.y * 0.5f * yScale;
 
 		if (position.x + m_size.x > xMax)
 			position.x = xMax - m_size.x;

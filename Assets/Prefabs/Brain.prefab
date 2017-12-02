@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114383818453508686}
   - component: {fileID: 114891118380247494}
   - component: {fileID: 50605385813887118}
+  - component: {fileID: 58935638686639832}
   m_Layer: 0
   m_Name: Brain
   m_TagString: Untagged
@@ -64,6 +65,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58935638686639832
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1572117352570112}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.013571724, y: 0.12228515}
+  serializedVersion: 2
+  m_Radius: 0.18642351
 --- !u!95 &95580473723067510
 Animator:
   serializedVersion: 3

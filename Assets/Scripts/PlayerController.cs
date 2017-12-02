@@ -51,8 +51,6 @@ public class PlayerController : MonoBehaviour
 			m_direction = 3;        // Up
 		else if (vertical < -Mathf.Epsilon)
 			m_direction = 4;        // Down
-		else
-			m_direction = 0;
 
         if(m_movementDir != Vector3.zero)
         {

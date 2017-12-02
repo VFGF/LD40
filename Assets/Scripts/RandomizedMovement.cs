@@ -30,8 +30,6 @@ public class RandomizedMovement : MonoBehaviour {
             duration -= Time.deltaTime;
         else
             Randomize();
-
-        //transform.Translate(direction * speed * Time.deltaTime);
     }
 
     private void Randomize()
@@ -39,7 +37,6 @@ public class RandomizedMovement : MonoBehaviour {
         duration = Random.Range(durationMin, durationMax);
         direction = new Vector2(Random.Range(-1f,1f), Random.Range(-1f, 1f));
         direction.Normalize();
-        Debug.Log(direction.x.ToString() + " " + direction.y.ToString());
 
         if(direction.x > Mathf.Epsilon)
         {
@@ -54,5 +51,19 @@ public class RandomizedMovement : MonoBehaviour {
     private void FixedUpdate()
     {
         m_rb.velocity = direction * speed;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag != "Player")
+        {
+            Debug.Log("Collided");
+            direction = -direction;
+        }
+        else
+        {
+            Debug.Log("Caught");
+            Destroy(gameObject);
+        }
     }
 }

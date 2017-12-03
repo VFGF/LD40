@@ -5,6 +5,8 @@ using UnityEngine;
 public class GoTowardsPlayer : MonoBehaviour {
 
     private GameObject target;
+    [SerializeField]
+    private float speed;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +15,6 @@ public class GoTowardsPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3.MoveTowards(transform.position, target.transform.position, )
-	}
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+    }
 }

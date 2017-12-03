@@ -14,7 +14,7 @@ public class RandomTransform : MonoBehaviour {
     [SerializeField]
     private float minSize = 0.8f;
 
-    void OnValidate()
+    void Start()
     {
         transform.localEulerAngles = new Vector3(0f, 0f, Random.Range(minRotation, maxRotation));
         float randomSize = Random.Range(minSize, maxSize);

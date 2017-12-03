@@ -7,6 +7,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 	Transform m_player;
+	[HideInInspector]
 	public BoxCollider2D m_currentBounds;
 	Vector2 m_currentBoundOrigin;
 	Vector2 m_size = Vector2.zero;
@@ -37,6 +38,8 @@ public class CameraController : MonoBehaviour
 
 	void HandleBounds()
 	{
+		if (!m_currentBounds)
+			return;
 		m_currentBoundOrigin = m_currentBounds.transform.position;
 		Vector3 position = transform.position;
 		float xScale = m_currentBounds.transform.localScale.x;

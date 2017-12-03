@@ -9,11 +9,15 @@ public class PlayerController : MonoBehaviour
 {
 	// Movement
 	public float m_movementSpeed = 3.0f;
-	Vector3 m_movementDir = Vector3.zero;
+	Vector2 m_movementDir = Vector3.zero;
 	Rigidbody2D m_rb;
 
-    // Animation
-    Animator m_anim;
+	// Attacking
+	Vector2 m_facingDir = Vector2.left;
+	public float m_attackDistance = 0.7f;
+
+	// Animation
+	Animator m_anim;
     public int m_direction = 0;
 
 	// Attacking
@@ -55,9 +59,10 @@ public class PlayerController : MonoBehaviour
 		else if (vertical < -Mathf.Epsilon)
 			m_direction = 4;        // Down
 
-        if(m_movementDir != Vector3.zero)
+        if(m_movementDir != Vector2.zero)
         {
             m_anim.SetBool("Walking", true);
+			m_facingDir = m_movementDir.normalized;
         }
         else
         {
@@ -93,13 +98,14 @@ public class PlayerController : MonoBehaviour
 
 	void Attack()
 	{
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, m_movementDir, 2.0f, m_attackMask);
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, m_facingDir, m_attackDistance, m_attackMask);
+		Debug.DrawRay(transform.position, m_facingDir * m_attackDistance);
 
 		float damage = 1.0f;
 		if(hit.collider)
 		{
-			print("hit");
 			hit.collider.gameObject.SendMessage("Damage", damage, SendMessageOptions.DontRequireReceiver);
+			hit.collider.gameObject.SendMessage("Knockback", m_facingDir, SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }

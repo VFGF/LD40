@@ -7353,23 +7353,6 @@ MonoBehaviour:
   - {fileID: 1670994485987852, guid: c40deddceb7fca341b09d82b44b7dc7f, type: 2}
   - {fileID: 1004824065508904, guid: 23c75c7520b26aa438f0b887b2007f14, type: 2}
   - {fileID: 1953616749718132, guid: c1315de58bea3d049873c6767592ae2d, type: 2}
---- !u!1 &387533167 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1599672208030770, guid: 85fa84f04ecd31e4ebf38143d7235a73,
-    type: 2}
-  m_PrefabInternal: {fileID: 894105136}
---- !u!65 &387533173
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 387533167}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.48800004, y: 1.25, z: 0.2}
-  m_Center: {x: 0.0070648864, y: 0.62, z: 0}
 --- !u!1 &390167237
 GameObject:
   m_ObjectHideFlags: 0
@@ -14555,7 +14538,7 @@ Prefab:
     - target: {fileID: 224304172079763222, guid: 826b8aa84c694c54593c500f1a9fa1f6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 618.5
+      value: 619.5
       objectReference: {fileID: 0}
     - target: {fileID: 224304172079763222, guid: 826b8aa84c694c54593c500f1a9fa1f6,
         type: 2}
@@ -17660,6 +17643,11 @@ Prefab:
     - target: {fileID: 4576364697913328, guid: 85fa84f04ecd31e4ebf38143d7235a73, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114429096039819490, guid: 85fa84f04ecd31e4ebf38143d7235a73,
+        type: 2}
+      propertyPath: m_health
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 85fa84f04ecd31e4ebf38143d7235a73, type: 2}
@@ -22462,6 +22450,16 @@ Prefab:
         type: 2}
       propertyPath: m_attackMask.m_Bits
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 58501248872442380, guid: 39f40c5866b4de5428ec49fe06dcb596,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114764919881857348, guid: 39f40c5866b4de5428ec49fe06dcb596,
+        type: 2}
+      propertyPath: m_attackDistance
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39f40c5866b4de5428ec49fe06dcb596, type: 2}

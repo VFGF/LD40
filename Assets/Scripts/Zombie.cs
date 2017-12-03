@@ -10,6 +10,10 @@ public class Zombie : MonoBehaviour
 	private SpriteRenderer m_sr;
 	public LayerMask m_collideMask;
 	Vector2 m_targetPos;
+	float m_knockbackTimer = 0.0f;
+	Vector2 m_knockbackDirection;
+
+	public float m_health = 5.0f;
 
 	void Start()
 	{
@@ -20,12 +24,16 @@ public class Zombie : MonoBehaviour
 
     void Update()
     {
-		Debug.DrawLine(transform.position, m_targetPos);
-
-		float step = m_speed * Time.deltaTime;
-		Vector2 newPos = 
-			Vector2.MoveTowards(transform.position, m_targetPos, step);
-		transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
+		if(m_knockbackTimer > 0.0f)
+		{
+			m_knockbackTimer -= Time.deltaTime;
+			transform.position += (Vector3)m_knockbackDirection.normalized * Time.deltaTime * 5.0f;
+		}
+		else
+		{
+			Vector2 dir = (m_target.position - transform.position).normalized * m_speed;
+			transform.position += (Vector3)dir * Time.deltaTime;
+		}
 
 		HandleSprite();
 	}
@@ -38,32 +46,21 @@ public class Zombie : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		Vector2 dir = m_target.position - transform.position;
+		m_targetPos = m_target.position;
+	}
 
-		float flip = 1.0f;
-		while(true)
+	void Damage(float amount)
+	{
+		m_health -= amount;
+		if(m_health <= 0.0f)
 		{
-			flip *= -2.0f;
-
-			RaycastHit2D hit = Physics2D.Raycast(
-			transform.position,
-			dir.normalized,
-			dir.magnitude,
-			m_collideMask);
-
-			if (!hit.collider)
-			{
-				m_targetPos = (Vector2)transform.position + dir;
-				break;
-			}
-			else
-			{
-				dir = Vector2Ex.Rotate(dir, 20.0f * flip);
-			}
-			if (Mathf.Abs(flip) > 5.0f)
-			{
-				m_targetPos = transform.position;
-			}
+			Destroy(gameObject);
 		}
+	}
+
+	void Knockback(Vector2 direction)
+	{
+		m_knockbackDirection = direction;
+		m_knockbackTimer = 0.2f;
 	}
 }

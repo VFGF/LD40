@@ -32281,7 +32281,7 @@ MonoBehaviour:
   time: 20
   grimPrefab: {fileID: 1396127687142916, guid: 46ec363c94e4c6041bc10b7f6081d23f, type: 2}
   timeRunningOut: 0
-  timeRunningOutText: {fileID: 982859810}
+  timeRunningOutPanel: {fileID: 982859810}
   colorPanel: {fileID: 1810904588}
 --- !u!114 &1176954683
 MonoBehaviour:

@@ -11,6 +11,7 @@ public class GrimReaperManager : MonoBehaviour
 
     [SerializeField]
     private GameObject grimPrefab;
+    private GameObject grimReaper;
     private bool grimSpawned = false;
     [SerializeField]
     private bool timeRunningOut = false;
@@ -23,7 +24,23 @@ public class GrimReaperManager : MonoBehaviour
 
     private void Start()
     {
+        startTime = time;
+        ResetTimer();
+    }
+
+    public void ResetTimer()
+    {
         colorPanel.color = new Color(0f, 0f, 0f, 0f);
+        time = startTime;
+        grimSpawned = false;
+        timeRunningOut = false;
+        fadeAmount = 0f;
+
+        if(timeRunningOutPanel.activeSelf)
+            timeRunningOutPanel.SetActive(false);
+
+        if (grimReaper != null)
+            Destroy(grimReaper);
     }
 
     private void Update ()
@@ -54,7 +71,7 @@ public class GrimReaperManager : MonoBehaviour
 
     private void SpawnGrim()
     {
-        Instantiate(grimPrefab, transform.position, Quaternion.identity);
+        grimReaper = Instantiate(grimPrefab, transform.position, Quaternion.identity);
         grimSpawned = true;
     }
 

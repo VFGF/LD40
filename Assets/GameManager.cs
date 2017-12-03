@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(GrimReaperManager))]
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
 
     public bool gameOver = false;
+
+    private GrimReaperManager grm;
 
     private void Awake()
     {
@@ -18,5 +21,15 @@ public class GameManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        grm = GetComponent<GrimReaperManager>();
+    }
+
+    public void NewZone()
+    {
+        grm.ResetTimer();
     }
 }

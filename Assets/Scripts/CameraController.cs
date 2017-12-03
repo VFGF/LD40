@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.PostProcessing;
+
 
 public class CameraController : MonoBehaviour
 {
@@ -9,17 +11,23 @@ public class CameraController : MonoBehaviour
 	Vector2 m_currentBoundOrigin;
 	Vector2 m_size = Vector2.zero;
 
+    //private PostProcessingProfile m_ppp;
+    //private PostProcessingBehaviour m_ppb;
+
 	void Start ()
 	{
 		m_player = GameObject.Find("Player").transform;
 		m_size.y = GetComponent<Camera>().orthographicSize;
 		m_size.x = m_size.y * GetComponent<Camera>().aspect;
+
+        //m_ppb = GetComponent<PostProcessingBehaviour>();
 	}
 	
 	void Update ()
 	{
 		FollowPlayer();
 		HandleBounds();
+        //HandlePostProcessing();
 	}
 
 	void FollowPlayer()
@@ -50,4 +58,14 @@ public class CameraController : MonoBehaviour
 
 		transform.position = position;
 	}
+
+    /*
+    void HandlePostProcessing()
+    {
+        if(m_currentBounds.transform.name == "zone0")
+        {
+            m_ppb.profile = m_ppp;
+        }
+    }
+    */
 }

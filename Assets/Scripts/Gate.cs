@@ -13,7 +13,12 @@ public class Gate : MonoBehaviour {
 	void Start () {
         m_coll = GetComponent<BoxCollider2D>();
         m_anim = GetComponent<Animator>();
-        OpenGate();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H))
+            OpenGate();
     }
 
     public void OpenGate()

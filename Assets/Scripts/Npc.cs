@@ -14,8 +14,8 @@ public class Npc : MonoBehaviour
 	{
         if (coll.transform.CompareTag("Player"))
         {
-            m_dialogue.PrintText(m_text);
-            m_dialogue.gameObject.SetActive(true);
+			m_dialogue.gameObject.SetActive(true);
+			m_dialogue.PrintText(m_text);
         }
 	}
 
@@ -23,8 +23,8 @@ public class Npc : MonoBehaviour
 	{
         if (coll.transform.CompareTag("Player"))
         {
-            m_dialogue.ResetText();
-            m_dialogue.gameObject.SetActive(false);
+			m_dialogue.ResetText();
+			m_dialogue.gameObject.SetActive(false);
         }
 	}
 }

@@ -54,7 +54,7 @@ public class Zombie : MonoBehaviour
 		m_health -= amount;
 		if(m_health <= 0.0f)
 		{
-			Destroy(gameObject);
+			Destroy(gameObject);	
 		}
 	}
 

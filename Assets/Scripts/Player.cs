@@ -21,24 +21,8 @@ public class Player : MonoBehaviour
 		ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
 		if (bound)
 		{
-			BoxCollider2D otherZone = null;
-			for(int i = 0; i < 2; i++)
-			{
-				if(bound.m_camBounds[i] != m_currentZone)
-				{
-					otherZone = bound.m_camBounds[i];
-					break;
-				}
-			}
-
-
-			m_camera.m_currentBounds = otherZone;
-
-			transform.position += 
-				(otherZone.transform.position - m_currentZone.transform.position).normalized 
-				* m_zoneSkipDistance;
-
-			m_currentZone = otherZone;
+			m_camera.m_currentBounds = bound.m_collider;
+			m_currentZone = bound.m_collider;
 		}
 	}
 }

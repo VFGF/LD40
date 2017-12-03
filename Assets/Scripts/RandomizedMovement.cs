@@ -17,10 +17,17 @@ public class RandomizedMovement : MonoBehaviour {
     private Rigidbody2D m_rb;
     private SpriteRenderer m_sr;
 
+    [SerializeField]
+    private bool isBrain;
+
+    private GameObject player;
+
     private void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
         m_sr = GetComponent<SpriteRenderer>();
+        player = GameObject.Find("Player");
+
         Randomize();
     }
 
@@ -35,7 +42,10 @@ public class RandomizedMovement : MonoBehaviour {
     private void Randomize()
     {
         duration = Random.Range(durationMin, durationMax);
-        direction = new Vector2(Random.Range(-1f,1f), Random.Range(-1f, 1f));
+
+        Vector2 playerDiff = transform.position - player.transform.position;
+
+        direction = new Vector2(Random.Range(-1f,1f), Random.Range(-1f, 1f)) + playerDiff;
         direction.Normalize();
 
         FlipSprite();
@@ -55,6 +65,24 @@ public class RandomizedMovement : MonoBehaviour {
         if (direction.x < Mathf.Epsilon)
         {
             m_sr.flipX = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isBrain)
+        {
+            if (collision.transform.tag != "Player")
+            {
+                Debug.Log("Collided");
+                direction = -direction;
+                FlipSprite();
+            }
+            else
+            {
+                Debug.Log("Caught");
+                Destroy(gameObject);
+            }
         }
     }
 }

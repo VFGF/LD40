@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 		
 	}
 
-	void OnTriggerEnter2D(Collider2D coll)
+	void OnTriggerStay2D(Collider2D coll)
 	{
 		ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
 		if (bound)

@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: cc412ad17438bcf4f886abaa8b0977e7
-timeCreated: 1512299286
+timeCreated: 1512299752
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: bush_0
     21300002: bush_1
+    21300004: bush_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -80,8 +81,8 @@ TextureImporter:
       name: bush_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 67
+        x: 27
+        y: 146
         width: 83
         height: 97
       alignment: 0
@@ -94,12 +95,26 @@ TextureImporter:
       name: bush_1
       rect:
         serializedVersion: 2
-        x: 135
-        y: 25
+        x: 146
+        y: 31
         width: 83
         height: 197
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bush_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 19
+        width: 104
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -12,7 +12,7 @@ public class RandomizedMovement : MonoBehaviour {
     private float speed;
 
     private float duration;
-    private Vector2 direction = Vector2.zero;
+    public Vector2 direction = Vector2.zero;
 
     private Rigidbody2D m_rb;
     private SpriteRenderer m_sr;
@@ -46,22 +46,7 @@ public class RandomizedMovement : MonoBehaviour {
         m_rb.velocity = direction * speed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.transform.tag != "Player")
-        {
-            Debug.Log("Collided");
-            direction = -direction;
-            FlipSprite();
-        }
-        else
-        {
-            Debug.Log("Caught");
-            Destroy(gameObject);
-        }
-    }
-
-    private void FlipSprite()
+    public void FlipSprite()
     {
         if (direction.x > Mathf.Epsilon)
         {

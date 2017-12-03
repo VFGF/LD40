@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4671712876025498}
   - component: {fileID: 212848718668314146}
-  - component: {fileID: 114856899445432984}
   - component: {fileID: 61892072298703568}
   m_Layer: 0
   m_Name: Fence Pillar
@@ -36,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1811731977776046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.363, y: 1.5, z: 0}
+  m_LocalPosition: {x: -3.363, y: -0.22300005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,10 +53,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0023277998, y: -0.16993165}
+  m_Offset: {x: 0.0023277998, y: 0.26464343}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5121315, y: 0.080017686}
     oldSize: {x: 0.3359375, y: 0.921875}
     newSize: {x: 0.86, y: 2.36}
     adaptiveTilingThreshold: 0.5
@@ -65,20 +64,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16367793, y: 0.20024729}
+  m_Size: {x: 0.16367793, y: 0.20151615}
   m_EdgeRadius: 0
---- !u!114 &114856899445432984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1811731977776046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90351729e358add408714faf1a3e58ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_dynamic: 0
 --- !u!212 &212848718668314146
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -108,8 +95,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 398334499
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d9244187bf20f374b9377ae1f704ccf4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

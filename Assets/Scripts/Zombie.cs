@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour {
+
+    // TODO: Replace with navmesh
 
     public GameObject target;
     public float speed;

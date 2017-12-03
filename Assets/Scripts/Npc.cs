@@ -12,13 +12,19 @@ public class Npc : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D coll)
 	{
-		m_dialogue.PrintText(m_text);
-		m_dialogue.gameObject.SetActive(true);
+        if (coll.transform.CompareTag("Player"))
+        {
+            m_dialogue.PrintText(m_text);
+            m_dialogue.gameObject.SetActive(true);
+        }
 	}
 
 	void OnTriggerExit2D(Collider2D coll)
 	{
-		m_dialogue.ResetText();
-		m_dialogue.gameObject.SetActive(false);
+        if (coll.transform.CompareTag("Player"))
+        {
+            m_dialogue.ResetText();
+            m_dialogue.gameObject.SetActive(false);
+        }
 	}
 }

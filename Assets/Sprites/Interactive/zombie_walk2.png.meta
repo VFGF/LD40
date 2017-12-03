@@ -1,9 +1,12 @@
 fileFormatVersion: 2
-guid: b644eec7f38d46e409fff7f1a3e972d3
-timeCreated: 1512258651
+guid: d9d0fe01e964b424c89ae8eb4cc09ce7
+timeCreated: 1512261797
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: zombie_walk2_0
+    21300002: zombie_walk2_1
+    21300004: zombie_walk2_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,13 +42,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5, y: 0.06072342}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 215
+  spritePixelsToUnits: 200
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -73,7 +76,49 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: zombie_walk2_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 125
+        height: 313
+      alignment: 9
+      pivot: {x: 0.50200456, y: 0.01379232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_walk2_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2
+        width: 115
+        height: 311
+      alignment: 9
+      pivot: {x: 0.45986885, y: 0.01379232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_walk2_2
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 116
+        height: 313
+      alignment: 9
+      pivot: {x: 0.46419314, y: 0.01379232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

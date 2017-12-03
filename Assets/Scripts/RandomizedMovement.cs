@@ -38,14 +38,7 @@ public class RandomizedMovement : MonoBehaviour {
         direction = new Vector2(Random.Range(-1f,1f), Random.Range(-1f, 1f));
         direction.Normalize();
 
-        if(direction.x > Mathf.Epsilon)
-        {
-            m_sr.flipX = true;
-        }
-        if(direction.x < Mathf.Epsilon)
-        {
-            m_sr.flipX = false;
-        }
+        FlipSprite();
     }
 
     private void FixedUpdate()
@@ -59,11 +52,24 @@ public class RandomizedMovement : MonoBehaviour {
         {
             Debug.Log("Collided");
             direction = -direction;
+            FlipSprite();
         }
         else
         {
             Debug.Log("Caught");
             Destroy(gameObject);
+        }
+    }
+
+    private void FlipSprite()
+    {
+        if (direction.x > Mathf.Epsilon)
+        {
+            m_sr.flipX = true;
+        }
+        if (direction.x < Mathf.Epsilon)
+        {
+            m_sr.flipX = false;
         }
     }
 }

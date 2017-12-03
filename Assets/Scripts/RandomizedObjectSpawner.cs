@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnowSpawner : MonoBehaviour {
+public class RandomizedObjectSpawner : MonoBehaviour {
 
     [SerializeField]
-    private GameObject[] debris;
+    private GameObject[] gameObjects;
 
     [SerializeField]
     private int amount;
@@ -24,10 +24,10 @@ public class SnowSpawner : MonoBehaviour {
     {
         for (int i = 0; i < amount; i++)
         {
-            int index = Random.Range(0, debris.Length);
+            int index = Random.Range(0, gameObjects.Length);
             float spawnX = Random.Range(minX, maxX);
             float spawnY = Random.Range(minY, maxY);
-            Instantiate(debris[index], new Vector3(spawnX, spawnY), Quaternion.identity);
+            Instantiate(gameObjects[index], new Vector3(spawnX, spawnY), Quaternion.identity);
         }
     }
 }

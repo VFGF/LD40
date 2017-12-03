@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     Animator m_anim;
     public int m_direction = 0;
 
+	// Attacking
+	public LayerMask m_attackMask;
+
 
 	void Start ()
 	{
@@ -63,9 +66,10 @@ public class PlayerController : MonoBehaviour
 
         m_anim.SetInteger("Direction", m_direction);
 
-        if(Input.GetAxisRaw("Fire1") > 0f)
+        if(Input.GetButtonDown("Fire1"))
         {
             m_anim.SetBool("Attack", true);
+			SendMessage("Attack");
         }
         else
         {
@@ -85,5 +89,17 @@ public class PlayerController : MonoBehaviour
 	void FixedUpdate()
 	{
 		m_rb.velocity = m_movementDir * m_movementSpeed;
+	}
+
+	void Attack()
+	{
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, m_movementDir, 2.0f, m_attackMask);
+
+		float damage = 1.0f;
+		if(hit.collider)
+		{
+			print("hit");
+			hit.collider.gameObject.SendMessage("Damage", damage, SendMessageOptions.DontRequireReceiver);
+		}
 	}
 }

@@ -43,9 +43,7 @@ public class RandomizedMovement : MonoBehaviour {
     {
         duration = Random.Range(durationMin, durationMax);
 
-        Vector2 playerDiff = transform.position - player.transform.position;
-
-        direction = new Vector2(Random.Range(-1f,1f), Random.Range(-1f, 1f)) + playerDiff;
+        direction = new Vector2(Random.Range(-1f,1f), Random.Range(-1f, 1f));
         direction.Normalize();
 
         FlipSprite();
@@ -75,8 +73,8 @@ public class RandomizedMovement : MonoBehaviour {
             if (collision.transform.tag != "Player")
             {
                 direction = -direction;
-                FlipSprite();
-            }
+				FlipSprite();
+			}
             else
             {
                 Destroy(gameObject);

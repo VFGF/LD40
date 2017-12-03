@@ -13,7 +13,8 @@ public class Gate : MonoBehaviour {
 	void Start () {
         m_coll = GetComponent<BoxCollider2D>();
         m_anim = GetComponent<Animator>();
-	}
+        OpenGate();
+    }
 
     public void OpenGate()
     {

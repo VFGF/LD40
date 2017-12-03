@@ -15,7 +15,8 @@ public class Zombie : MonoBehaviour {
     {
         target = GameObject.Find("Player");
         m_sr = GetComponent<SpriteRenderer>();
-        speed = Random.Range(0.5f, 1f);
+        if (speed == 0)
+            speed = Random.Range(0.5f, 1f);
     }
 
     void Update()

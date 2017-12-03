@@ -74,13 +74,11 @@ public class RandomizedMovement : MonoBehaviour {
         {
             if (collision.transform.tag != "Player")
             {
-                Debug.Log("Collided");
                 direction = -direction;
                 FlipSprite();
             }
             else
             {
-                Debug.Log("Caught");
                 Destroy(gameObject);
             }
         }

@@ -11,7 +11,6 @@ public class Dialogue : MonoBehaviour
 	bool m_donePrinting = true;
 	bool m_paused = false;
 	int m_overflow = 0;
-	int m_totalRemoved = 0;
 	int m_readCount = 0;
 	int m_currentStart = 0;
 

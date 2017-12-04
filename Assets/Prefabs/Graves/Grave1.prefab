@@ -113,11 +113,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e3198042f0df34faa1aaa837619005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_spawnObject: {fileID: 4576364697913328, guid: 85fa84f04ecd31e4ebf38143d7235a73,
     type: 2}
   isTreasure: 0
   type: 0
   zone: -1
+=======
+  m_spawnObjects:
+  - {fileID: 4576364697913328, guid: 85fa84f04ecd31e4ebf38143d7235a73, type: 2}
+  - {fileID: 4371712425084020, guid: be2382aef9092ee46a5d19e2e2666005, type: 2}
+  - {fileID: 4342105767948052, guid: e226a5a41b5231b4e91e61cf88696e88, type: 2}
+  isTreasure: 0
+  type: 0
+  zone: 0
+>>>>>>> 2a33c67173c10a101ef427664e0830a59b7b7e73
 --- !u!212 &212370184921134886
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -127,7 +137,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -143,7 +152,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Grave : MonoBehaviour
 {
-    public Transform m_spawnObject;
+    [SerializeField]
+    private Transform[] m_spawnObjects;
     public bool isTreasure = false;
     public enum TombstoneType { ROUNDED_TOP_EDGE, ROUNDED, SMALL_CROSS, CIRCULAR_CROSS, LARGE_CROSS }
     public TombstoneType type;
@@ -29,8 +30,10 @@ public class Grave : MonoBehaviour
 
 	void Dig()
 	{
-		Instantiate(m_spawnObject, transform.position, Quaternion.identity);
-		Instantiate(m_spawnObject, transform.position, Quaternion.identity);
+        int index = Random.Range(0, 2);
+		Instantiate(m_spawnObjects[index], transform.position, Quaternion.identity);
+        index = Random.Range(0, 2);
+        Instantiate(m_spawnObjects[index], transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}
 }

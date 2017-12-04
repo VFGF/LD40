@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 61351595437833602}
   - component: {fileID: 61628421474651386}
   - component: {fileID: 50141623547224422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: zombie3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072240462573992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.856969, y: -2.1094584, z: 0}
+  m_LocalPosition: {x: -1.6185558, y: 3.7150328, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,9 +81,9 @@ BoxCollider2D:
   m_Offset: {x: 0.0070648864, y: 0.60678715}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.48552278, y: 0.01379232}
-    oldSize: {x: 0.488, y: 1.248}
-    newSize: {x: 0.38977635, y: 0.99680513}
+    pivot: {x: 0.50043565, y: 0.01379232}
+    oldSize: {x: 0.5, y: 1.252}
+    newSize: {x: 0.5, y: 1.252}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -106,9 +106,9 @@ BoxCollider2D:
   m_Offset: {x: 0.0070648864, y: 0.19}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.48552278, y: 0.01379232}
-    oldSize: {x: 0.488, y: 1.248}
-    newSize: {x: 0.38977635, y: 0.99680513}
+    pivot: {x: 0.50043565, y: 0.01379232}
+    oldSize: {x: 0.5, y: 1.252}
+    newSize: {x: 0.5, y: 1.252}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -180,6 +180,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -195,6 +196,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

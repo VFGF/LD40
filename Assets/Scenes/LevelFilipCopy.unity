@@ -25040,6 +25040,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &921732640 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114582731537973364, guid: 0f9e3012a81ca6a4088b580e929566ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 958429279}
+  m_Script: {fileID: 11500000, guid: f70608a55963b02479dc4249a020e31f, type: 3}
 --- !u!1001 &923276134
 Prefab:
   m_ObjectHideFlags: 0
@@ -30962,11 +30968,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4229401257023384, guid: 39f40c5866b4de5428ec49fe06dcb596, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.73
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 4229401257023384, guid: 39f40c5866b4de5428ec49fe06dcb596, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 34.33
+      value: -0.99
       objectReference: {fileID: 0}
     - target: {fileID: 4229401257023384, guid: 39f40c5866b4de5428ec49fe06dcb596, type: 2}
       propertyPath: m_LocalPosition.z
@@ -34946,6 +34952,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114617523108787644, guid: 08ae968659c3704409208c51803681c7,
+        type: 2}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 759445040}
     - target: {fileID: 114323222481915044, guid: 08ae968659c3704409208c51803681c7,
         type: 2}
       propertyPath: timeRunningOutPanel
@@ -34956,17 +34967,6 @@ Prefab:
       propertyPath: colorPanel
       value: 
       objectReference: {fileID: 1635646523}
-    - target: {fileID: 114617523108787644, guid: 08ae968659c3704409208c51803681c7,
-        type: 2}
-      propertyPath: healthPrefab
-      value: 
-      objectReference: {fileID: 1076124331420478, guid: 9a19c1e995c6ef84fa9dc0df934484a5,
-        type: 2}
-    - target: {fileID: 114617523108787644, guid: 08ae968659c3704409208c51803681c7,
-        type: 2}
-      propertyPath: UI
-      value: 
-      objectReference: {fileID: 759445040}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08ae968659c3704409208c51803681c7, type: 2}
   m_IsPrefabParent: 0
@@ -42993,7 +42993,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Crow Man
   m_dialogue: {fileID: 759445039}
-  m_text: Kraa!
+  m_text: 'Kraa! Greetings traveler. Are you here to visit the graveyard too? You
+    are not the first, nor will you be the last. But remember, disturbing the dead
+    will not go unnoticed by us. Beware of the Grim Reaper, if you stay in one area
+    for too long, he will come for you. There are many myths and legends about this
+    location, some of which are true, others are not. But the treasure, oh that is
+    real. I can see in your eyes, that gold is what you are looking for. Kraa! Stay
+    alert, many have come before you, but none have found it. I will watch over you
+    closely, but I will not intervene. Good luck, traveler. But remember, do not talk
+    to the hanged man.
+
+
+    (Use WASD or the left analog controller to move. Left Click or press A to attack.
+    Right click or press B to dig. The treasure is hidden in one of the graves, but
+    uncovering the wrong one will result in more hostiles. Speak to the characters
+    to get information about the treasure. There are 9 areas to explore)'
 --- !u!61 &1607654150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43035,6 +43049,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c7fc68ad422ca3e43916f163d99af3d8, type: 3}
   chance: 1
   index: 0
+  gateScript: {fileID: 921732640}
 --- !u!1 &1608046464
 GameObject:
   m_ObjectHideFlags: 0

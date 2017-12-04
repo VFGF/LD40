@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1ab0f98c8bf7e45a2fea4912e1bc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 20
+  time: 120
   grimPrefab: {fileID: 1396127687142916, guid: 46ec363c94e4c6041bc10b7f6081d23f, type: 2}
   timeRunningOut: 0
   timeRunningOutPanel: {fileID: 0}
@@ -68,4 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ddf685a259898b45b1be4a3db937e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
+  healthPrefab: {fileID: 1076124331420478, guid: 9a19c1e995c6ef84fa9dc0df934484a5,
+    type: 2}
+  healthIconList: []
+  UI: {fileID: 0}
   gameOver: 0

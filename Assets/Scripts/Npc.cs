@@ -10,7 +10,23 @@ public class Npc : MonoBehaviour
 	[TextArea]
 	public string m_text;
 
-	void OnTriggerEnter2D(Collider2D coll)
+    private BirdMan birdManScript;
+
+    private void Start()
+    {
+        if (GetComponent<BirdMan>() != null)
+            birdManScript = GetComponent<BirdMan>();
+    }
+
+    private void Update()
+    {
+        if(m_dialogue.m_isFinished && birdManScript != null)
+        {
+            birdManScript.OpenGate();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
 	{
         if (coll.transform.CompareTag("Player"))
         {

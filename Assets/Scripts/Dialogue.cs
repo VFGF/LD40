@@ -9,6 +9,7 @@ public class Dialogue : MonoBehaviour
 	string m_currentText;
 	public TextMeshProUGUI m_text;
 	bool m_donePrinting = true;
+    public bool m_isFinished = false;
 	bool m_paused = false;
 	int m_overflow = 0;
 	int m_readCount = 0;
@@ -49,11 +50,15 @@ public class Dialogue : MonoBehaviour
 				m_currentText += m_printMessage[m_readCount++];
 
 				if (m_readCount > m_printMessage.Length - 1)
-					m_donePrinting = true;
+                {
+                    m_donePrinting = true;
+                    m_isFinished = true;
+                }
+
 
 				if(m_text.isTextOverflowing)
 				{
-					print("uheaedkufaef");
+					//print("uheaedkufaef");
 					m_overflow = m_text.firstOverflowCharacterIndex + m_currentStart;
 					m_readCount = m_overflow;
 					m_currentText = m_printMessage.Substring(m_currentStart, m_readCount - m_currentStart);

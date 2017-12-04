@@ -12,6 +12,9 @@ public class BirdMan : MonoBehaviour {
     private int index;
     private int startIndex;
 
+    [SerializeField]
+    private Gate gateScript;
+
     private SpriteRenderer m_sr;
 
 	// Use this for initialization
@@ -32,4 +35,9 @@ public class BirdMan : MonoBehaviour {
             m_sr.sprite = sprites[index];
         }
 	}
+
+    public void OpenGate()
+    {
+        gateScript.OpenGate();
+    }
 }

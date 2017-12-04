@@ -15,12 +15,6 @@ public class Gate : MonoBehaviour {
         m_anim = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-            OpenGate();
-    }
-
     public void OpenGate()
     {
         m_coll.enabled = false;

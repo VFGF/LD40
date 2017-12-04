@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
 	// Attacking
 	public LayerMask m_attackMask;
 
+	// Digging
+	public LayerMask m_digMask;
 
 	void Start ()
 	{
@@ -81,11 +83,12 @@ public class PlayerController : MonoBehaviour
             m_anim.SetBool("Attack", false);
         }
 
-        if (Input.GetAxisRaw("Fire2") > 0f)
+        if (Input.GetButtonDown("Fire2"))
         {
             m_anim.SetBool("Digging", true);
-        }
-        else
+			SendMessage("Dig");
+		}
+		else
         {
             m_anim.SetBool("Digging", false);
         }
@@ -106,6 +109,15 @@ public class PlayerController : MonoBehaviour
 		{
 			hit.collider.gameObject.SendMessage("Damage", damage, SendMessageOptions.DontRequireReceiver);
 			hit.collider.gameObject.SendMessage("Knockback", m_facingDir, SendMessageOptions.DontRequireReceiver);
+		}
+	}
+
+	void Dig()
+	{
+		Collider2D result = Physics2D.OverlapCircle(transform.position, 1.0f, m_digMask);
+		if(result)
+		{
+			result.gameObject.SendMessage("Dig");
 		}
 	}
 }

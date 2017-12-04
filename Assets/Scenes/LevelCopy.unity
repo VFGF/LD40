@@ -31340,6 +31340,11 @@ Prefab:
       propertyPath: m_currentZone
       value: 
       objectReference: {fileID: 798155268}
+    - target: {fileID: 114764919881857348, guid: 39f40c5866b4de5428ec49fe06dcb596,
+        type: 2}
+      propertyPath: m_digMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39f40c5866b4de5428ec49fe06dcb596, type: 2}
   m_IsPrefabParent: 0

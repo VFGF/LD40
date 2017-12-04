@@ -12,15 +12,33 @@ public class Zombie : MonoBehaviour
 	Vector2 m_targetPos;
 	float m_knockbackTimer = 0.0f;
 	Vector2 m_knockbackDirection;
+    [SerializeField]
+    private GameObject brainPrefab;
+    [SerializeField]
+    private float spawnChance = 10f;
+
+    [SerializeField]
+    private GameObject graveSpawnPointPrefab;
 
 	public float m_health = 5.0f;
+    //[SerializeField]
+    //private float lifeTime = 30f;
 
 	void Start()
 	{
 		m_target = GameObject.Find("Player").transform;
 		m_sr = GetComponent<SpriteRenderer>();
 		m_speed = Random.Range(0.5f, 1f);
+        //StartCoroutine(lifeTimeEnd());
     }
+
+    /* Killing the zombie after a lifetime
+    IEnumerator lifeTimeEnd()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        Die();
+    }
+    */
 
     void Update()
     {
@@ -54,9 +72,24 @@ public class Zombie : MonoBehaviour
 		m_health -= amount;
 		if(m_health <= 0.0f)
 		{
-			Destroy(gameObject);	
-		}
+            Die();
+        }
 	}
+
+    void Die()
+    {
+        float rng = Random.Range(0f, 100f);
+        if (rng <= spawnChance)
+        {
+            Vector2 spawnPosition = transform.position + new Vector3(0f, 0.5f);
+            Instantiate(brainPrefab, spawnPosition, Quaternion.identity);
+
+        }
+
+        Instantiate(graveSpawnPointPrefab, transform.position, Quaternion.identity);
+
+        Destroy(gameObject);
+    }
 
 	void Knockback(Vector2 direction)
 	{

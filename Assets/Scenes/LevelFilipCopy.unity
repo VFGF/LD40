@@ -1754,52 +1754,11 @@ MonoBehaviour:
   - {fileID: 1670994485987852, guid: c40deddceb7fca341b09d82b44b7dc7f, type: 2}
   - {fileID: 1004824065508904, guid: 23c75c7520b26aa438f0b887b2007f14, type: 2}
   - {fileID: 1953616749718132, guid: c1315de58bea3d049873c6767592ae2d, type: 2}
---- !u!1 &57598410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 57598412}
-  - component: {fileID: 57598411}
-  m_Layer: 0
-  m_Name: GraveSpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &57598411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 57598410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b133d30b354a157468729cf97da60cd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graves:
-  - {fileID: 1204762300538118, guid: a743fcd2000cb4044bc952270d690e3f, type: 2}
-  - {fileID: 1317860719187614, guid: fc064c835dd295649bb992520175fce3, type: 2}
-  - {fileID: 1670994485987852, guid: c40deddceb7fca341b09d82b44b7dc7f, type: 2}
-  - {fileID: 1004824065508904, guid: 23c75c7520b26aa438f0b887b2007f14, type: 2}
-  - {fileID: 1953616749718132, guid: c1315de58bea3d049873c6767592ae2d, type: 2}
---- !u!4 &57598412
+--- !u!4 &57598412 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 57598410}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.36, y: 2.9, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 651448604}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_PrefabParentObject: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf,
+    type: 2}
+  m_PrefabInternal: {fileID: 935274086}
 --- !u!1 &62156581
 GameObject:
   m_ObjectHideFlags: 0
@@ -25310,6 +25269,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &935274086
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 651448604}
+    m_Modifications:
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922010806287762, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9d8186512b174de46a5128e845357acf, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &936369888
 Prefab:
   m_ObjectHideFlags: 0
@@ -42998,21 +42999,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Crow Man
   m_dialogue: {fileID: 759445039}
-  m_text: 'Kraa! Greetings traveler. Are you here to visit the graveyard too? You
-    are not the first, nor will you be the last. But remember, disturbing the dead
-    will not go unnoticed by us. Beware of the Grim Reaper, if you stay in one area
-    for too long, he will come for you. There are many myths and legends about this
-    location, some of which are true, others are not. But the treasure, oh that is
-    real. I can see in your eyes, that gold is what you are looking for. Kraa! Stay
-    alert, many have come before you, but none have found it. I will watch over you
-    closely, but I will not intervene. Good luck, traveler. But remember, do not talk
-    to the hanged man.
-
-
-    (Use WASD or the left analog controller to move. Left Click or press A to attack.
-    Right click or press B to dig. The treasure is hidden in one of the graves, but
-    uncovering the wrong one will result in more hostiles. Speak to the characters
-    to get information about the treasure. There are 9 areas to explore)'
+  m_text: "(Press E to advance)\nKraa! Greetings traveler. Are you here to visit the
+    graveyard too? You are not the first, nor will you be the last. But remember,
+    disturbing the dead will not go unnoticed by us. Beware of the Grim Reaper, if
+    you stay in one area for too long, he will come for you. There are many myths
+    and legends about this location, some of which are true, others are not. But the
+    treasure, oh that is real. \nI can see in your eyes, that gold is what you are
+    looking for. Kraa! Stay alert, many have come before you, but none have found
+    it. I will watch over you closely, but I will not intervene. Good luck, traveler.
+    \nBut remember, do not talk to the hanged man.\n\n\n\n(Use WASD or the left analog
+    controller to move. Left Click or press A to attack. Right click or press B to
+    dig. The treasure is hidden in one of the graves, but uncovering the wrong one
+    will result in more hostiles. \nSpeak to the characters to get information about
+    the treasure. There are 9 areas to explore. \"Grave Danger\" was made for Ludum
+    Dare 40 in 72 hours)"
 --- !u!61 &1607654150
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 
     public int health = 3;
     [SerializeField]
+    private int maxHealth = 5;
+    [SerializeField]
     private GameObject healthPrefab;
     [SerializeField]
     private List<GameObject> healthIconList = new List<GameObject>();
@@ -98,8 +100,11 @@ public class GameManager : MonoBehaviour {
 
     public void GainHealth()
     {
-        health++;
-        RenderHealth();
+        if (health < maxHealth)
+        {
+            health++;
+            RenderHealth();
+        }
     }
 
     public void RenderHealth()

@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Npc : MonoBehaviour
 {
 	public string m_name;
+    [SerializeField]
+    private TextMeshProUGUI m_nameText;
 	public Dialogue m_dialogue;
 	[TextArea]
 	public string m_text;
@@ -32,6 +35,7 @@ public class Npc : MonoBehaviour
         {
 			m_dialogue.gameObject.SetActive(true);
 			m_dialogue.PrintText(m_text);
+            m_nameText.text = m_name;
         }
 	}
 

@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
         m_anim.SetInteger("Direction", m_direction);
 
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Attack"))
         {
             m_anim.SetBool("Attack", true);
 			SendMessage("Attack");
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
             m_anim.SetBool("Attack", false);
         }
 
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Dig"))
         {
             m_anim.SetBool("Digging", true);
 			SendMessage("Dig");

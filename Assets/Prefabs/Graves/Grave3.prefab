@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212978693982964618}
   - component: {fileID: 61939543536356822}
   - component: {fileID: 114347821674061424}
-  m_Layer: 0
+  - component: {fileID: 114825071245419174}
+  m_Layer: 12
   m_Name: Grave3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,6 +81,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dynamic: 0
   offset: 0
+--- !u!114 &114825071245419174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670994485987852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e3198042f0df34faa1aaa837619005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212978693982964618
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -89,6 +101,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -104,6 +117,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

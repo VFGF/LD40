@@ -139,6 +139,7 @@ MonoBehaviour:
   m_collideMask:
     serializedVersion: 2
     m_Bits: 4294963451
+  m_health: 3
 --- !u!212 &212713722440882538
 SpriteRenderer:
   m_ObjectHideFlags: 1

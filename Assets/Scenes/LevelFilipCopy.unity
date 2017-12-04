@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 6641406}
   m_Layer: 0
   m_Name: Bush_corner (5)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 13391286}
   m_Layer: 0
   m_Name: Bush_corner (7)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 24367841}
   m_Layer: 0
   m_Name: Bush_end (4)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1132,7 +1132,7 @@ GameObject:
   - component: {fileID: 42030503}
   m_Layer: 0
   m_Name: Bush_corner (8)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2321,7 +2321,7 @@ GameObject:
   - component: {fileID: 73871700}
   m_Layer: 0
   m_Name: Bush_corner (22)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3280,7 +3280,7 @@ GameObject:
   - component: {fileID: 109086099}
   m_Layer: 0
   m_Name: Bush_straight (27)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3423,7 +3423,7 @@ GameObject:
   - component: {fileID: 112549068}
   m_Layer: 0
   m_Name: Bush_straight (28)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3591,7 +3591,7 @@ GameObject:
   - component: {fileID: 114216146}
   m_Layer: 0
   m_Name: Bush_end (8)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4628,7 +4628,7 @@ GameObject:
   - component: {fileID: 146872106}
   m_Layer: 0
   m_Name: Bush_corner (4)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4796,7 +4796,7 @@ GameObject:
   - component: {fileID: 151743780}
   m_Layer: 0
   m_Name: Bush_straight (32)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5193,7 +5193,7 @@ GameObject:
   - component: {fileID: 175479937}
   m_Layer: 0
   m_Name: Bush_straight (9)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5352,7 +5352,7 @@ GameObject:
   - component: {fileID: 179665393}
   m_Layer: 0
   m_Name: Bush_straight (30)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5972,7 +5972,7 @@ GameObject:
   - component: {fileID: 233911404}
   m_Layer: 0
   m_Name: Bush_corner (25)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6267,7 +6267,7 @@ GameObject:
   - component: {fileID: 243250417}
   m_Layer: 0
   m_Name: Bush_corner (2)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6626,7 +6626,7 @@ GameObject:
   - component: {fileID: 248282404}
   m_Layer: 0
   m_Name: Bush_straight (19)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9144,7 +9144,7 @@ GameObject:
   - component: {fileID: 312842289}
   m_Layer: 0
   m_Name: Bush_straight (18)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9349,7 +9349,7 @@ GameObject:
   - component: {fileID: 318915492}
   m_Layer: 0
   m_Name: Bush_straight (25)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9564,7 +9564,7 @@ GameObject:
   - component: {fileID: 327919229}
   m_Layer: 0
   m_Name: Bush_corner (19)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9686,7 +9686,7 @@ GameObject:
   - component: {fileID: 328361187}
   m_Layer: 0
   m_Name: Bush_straight (31)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11165,7 +11165,7 @@ GameObject:
   - component: {fileID: 390167238}
   - component: {fileID: 390167240}
   - component: {fileID: 390167241}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11629,7 +11629,7 @@ GameObject:
   - component: {fileID: 427257632}
   m_Layer: 0
   m_Name: Bush_corner (9)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11802,7 +11802,7 @@ GameObject:
   - component: {fileID: 430144235}
   m_Layer: 0
   m_Name: Bush_end (9)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11996,7 +11996,7 @@ GameObject:
   - component: {fileID: 434087134}
   m_Layer: 0
   m_Name: Bush_straight (4)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12328,7 +12328,7 @@ GameObject:
   - component: {fileID: 443549570}
   m_Layer: 0
   m_Name: Bush_corner (27)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13134,7 +13134,7 @@ GameObject:
   - component: {fileID: 462561077}
   m_Layer: 0
   m_Name: Bush_straight (16)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13232,7 +13232,7 @@ GameObject:
   - component: {fileID: 464727968}
   m_Layer: 0
   m_Name: Bush_corner (11)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13593,7 +13593,7 @@ GameObject:
   - component: {fileID: 468732383}
   m_Layer: 0
   m_Name: Bush_straight (34)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15967,7 +15967,7 @@ GameObject:
   - component: {fileID: 574513168}
   m_Layer: 0
   m_Name: Bush_straight (24)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16128,7 +16128,7 @@ GameObject:
   - component: {fileID: 583582246}
   m_Layer: 0
   m_Name: Bush_corner (6)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16514,7 +16514,7 @@ GameObject:
   - component: {fileID: 589778399}
   m_Layer: 0
   m_Name: Bush_end (20)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16610,7 +16610,7 @@ GameObject:
   - component: {fileID: 593111293}
   - component: {fileID: 593111295}
   - component: {fileID: 593111296}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16795,7 +16795,7 @@ GameObject:
   - component: {fileID: 604492140}
   m_Layer: 0
   m_Name: Bush_corner (1)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17848,7 +17848,7 @@ GameObject:
   - component: {fileID: 668724913}
   m_Layer: 0
   m_Name: Bush_end (21)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17944,7 +17944,7 @@ GameObject:
   - component: {fileID: 675570947}
   - component: {fileID: 675570949}
   - component: {fileID: 675570950}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18206,7 +18206,7 @@ GameObject:
   - component: {fileID: 687454961}
   - component: {fileID: 687454963}
   - component: {fileID: 687454964}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19141,7 +19141,7 @@ GameObject:
   - component: {fileID: 723724365}
   m_Layer: 0
   m_Name: Bush_end (17)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19356,7 +19356,7 @@ GameObject:
   - component: {fileID: 736512393}
   m_Layer: 0
   m_Name: Bush_corner (20)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19570,7 +19570,7 @@ GameObject:
   - component: {fileID: 740405545}
   m_Layer: 0
   m_Name: Bush_end (14)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19769,7 +19769,7 @@ GameObject:
   - component: {fileID: 751148814}
   - component: {fileID: 751148816}
   - component: {fileID: 751148817}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20475,7 +20475,7 @@ GameObject:
   - component: {fileID: 777775355}
   m_Layer: 0
   m_Name: Bush_corner (18)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21124,7 +21124,7 @@ GameObject:
   - component: {fileID: 798155270}
   - component: {fileID: 798155268}
   - component: {fileID: 798155269}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21782,7 +21782,7 @@ GameObject:
   - component: {fileID: 833423947}
   m_Layer: 0
   m_Name: Bush_end (16)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21950,7 +21950,7 @@ GameObject:
   - component: {fileID: 834328107}
   m_Layer: 0
   m_Name: Bush_straight (38)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22070,7 +22070,7 @@ GameObject:
   - component: {fileID: 841785955}
   m_Layer: 0
   m_Name: Bush_straight
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22864,7 +22864,7 @@ GameObject:
   - component: {fileID: 868626742}
   m_Layer: 0
   m_Name: Bush_end (10)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23585,7 +23585,7 @@ GameObject:
   - component: {fileID: 884725384}
   - component: {fileID: 884725386}
   - component: {fileID: 884725387}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23833,7 +23833,7 @@ GameObject:
   - component: {fileID: 886027789}
   - component: {fileID: 886027791}
   - component: {fileID: 886027792}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24444,7 +24444,7 @@ GameObject:
   - component: {fileID: 907638622}
   m_Layer: 0
   m_Name: Bush_straight (36)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25194,7 +25194,7 @@ GameObject:
   - component: {fileID: 929935849}
   m_Layer: 0
   m_Name: Bush_corner (15)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26564,7 +26564,7 @@ GameObject:
   - component: {fileID: 990926504}
   m_Layer: 0
   m_Name: Bush_corner (28)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27107,7 +27107,7 @@ GameObject:
   - component: {fileID: 1011745146}
   m_Layer: 0
   m_Name: Bush_corner (30)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28374,7 +28374,7 @@ GameObject:
   - component: {fileID: 1059205815}
   m_Layer: 0
   m_Name: Bush_end (15)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28471,7 +28471,7 @@ GameObject:
   - component: {fileID: 1063095019}
   m_Layer: 0
   m_Name: Bush_straight (3)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29354,7 +29354,7 @@ GameObject:
   - component: {fileID: 1099652291}
   m_Layer: 0
   m_Name: Bush_corner (12)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29766,7 +29766,7 @@ GameObject:
   - component: {fileID: 1105586574}
   m_Layer: 0
   m_Name: Bush_corner
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30835,7 +30835,7 @@ GameObject:
   - component: {fileID: 1167491194}
   m_Layer: 0
   m_Name: Bush_end (1)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31170,7 +31170,7 @@ GameObject:
   - component: {fileID: 1176529917}
   - component: {fileID: 1176529919}
   - component: {fileID: 1176529920}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31448,7 +31448,7 @@ GameObject:
   - component: {fileID: 1182833621}
   m_Layer: 0
   m_Name: Bush_corner (14)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32682,7 +32682,7 @@ GameObject:
   - component: {fileID: 1218381174}
   m_Layer: 0
   m_Name: Bush_straight (8)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33502,7 +33502,7 @@ GameObject:
   - component: {fileID: 1244951659}
   m_Layer: 0
   m_Name: Bush_straight (21)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34183,7 +34183,7 @@ GameObject:
   - component: {fileID: 1267084483}
   m_Layer: 0
   m_Name: Bush_straight (22)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35472,7 +35472,7 @@ GameObject:
   - component: {fileID: 1326497325}
   m_Layer: 0
   m_Name: Bush_straight (40)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35803,7 +35803,7 @@ GameObject:
   - component: {fileID: 1336013727}
   m_Layer: 0
   m_Name: Bush_straight (17)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36544,7 +36544,7 @@ GameObject:
   - component: {fileID: 1383226092}
   m_Layer: 0
   m_Name: Bush_straight (23)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37062,7 +37062,7 @@ GameObject:
   - component: {fileID: 1399006621}
   m_Layer: 0
   m_Name: Bush_straight (39)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37205,7 +37205,7 @@ GameObject:
   - component: {fileID: 1402466021}
   m_Layer: 0
   m_Name: Bush_straight (2)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37588,7 +37588,7 @@ GameObject:
   - component: {fileID: 1409636631}
   m_Layer: 0
   m_Name: Bush_straight (29)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38602,7 +38602,7 @@ GameObject:
   - component: {fileID: 1469860418}
   m_Layer: 0
   m_Name: Bush_end (19)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39234,7 +39234,7 @@ GameObject:
   - component: {fileID: 1504670010}
   m_Layer: 0
   m_Name: Bush_corner (10)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39403,7 +39403,7 @@ GameObject:
   - component: {fileID: 1509643171}
   m_Layer: 0
   m_Name: Bush_corner (31)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39705,7 +39705,7 @@ GameObject:
   - component: {fileID: 1517045569}
   m_Layer: 0
   m_Name: Bush_corner (23)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39828,7 +39828,7 @@ GameObject:
   - component: {fileID: 1518503921}
   m_Layer: 0
   m_Name: Bush_corner (21)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40506,7 +40506,7 @@ GameObject:
   - component: {fileID: 1537092153}
   m_Layer: 0
   m_Name: Bush_corner (24)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41679,7 +41679,7 @@ GameObject:
   - component: {fileID: 1560070495}
   m_Layer: 0
   m_Name: Bush_straight (15)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42087,7 +42087,7 @@ GameObject:
   - component: {fileID: 1582457589}
   m_Layer: 0
   m_Name: Bush_straight (41)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42489,7 +42489,7 @@ GameObject:
   - component: {fileID: 1594193219}
   m_Layer: 0
   m_Name: Bush_end
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42712,7 +42712,7 @@ GameObject:
   - component: {fileID: 1598560076}
   m_Layer: 0
   m_Name: Bush_end (12)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43146,7 +43146,7 @@ GameObject:
   - component: {fileID: 1613279012}
   m_Layer: 0
   m_Name: Bush_corner (17)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43268,7 +43268,7 @@ GameObject:
   - component: {fileID: 1616689780}
   m_Layer: 0
   m_Name: Bush_straight (10)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43411,7 +43411,7 @@ GameObject:
   - component: {fileID: 1620116693}
   m_Layer: 0
   m_Name: Bush_straight (11)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44265,7 +44265,7 @@ GameObject:
   - component: {fileID: 1658497171}
   m_Layer: 0
   m_Name: Bush_straight (14)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44816,6 +44816,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1667247806}
   - component: {fileID: 1667247805}
+  - component: {fileID: 1667247808}
+  - component: {fileID: 1667247807}
+  - component: {fileID: 1667247809}
+  - component: {fileID: 1667247810}
   m_Layer: 0
   m_Name: benjamin
   m_TagString: Untagged
@@ -44872,12 +44876,85 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1667247804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.717367, y: 34.048473, z: 0}
+  m_LocalPosition: {x: 15.411, y: 33.333, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1667247807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667247804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68831339ced475540b0918bbea5a57e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_name: Benjamin
+  m_dialogue: {fileID: 759445039}
+  m_text: 'Hello there my friend! You wanna'' hear a joke? Here goes! Why didn''t
+    the skeleton go to the party? He didn''t have anyone to go with! Hehehe, hehe.
+    Wait. No. That wasn''t right. Ok. Let''s try that one again.  Here goes! Why didn''t
+    the skeleton go to the party? He didn''t have anyone to go with! Hehehe, hehe.
+    Wait. No. That wasn''t right. Ok. Let''s try that one again.  Here goes! Why didn''t
+    the skeleton go to the party? He didn''t have anyone to go with! Hehehe, hehe.
+    Wait. No. That wasn''t right. Ok. Let''s try that one again.  Here goes! Why didn''t
+    the skeleton go to the party? He didn''t have anyone to go with! Hehehe, hehe.
+    Wait. No. That wasn''t right. Ok. Let''s try that one again. '
+--- !u!61 &1667247808
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667247804}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.7800503, y: 0.080017686}
+    oldSize: {x: 1.52, y: 1.888}
+    newSize: {x: 3.8, y: 4.72}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.52, y: 1.888}
+  m_EdgeRadius: 0
+--- !u!58 &1667247809
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667247804}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.42567638, y: 0.79292655}
+  serializedVersion: 2
+  m_Radius: 2
+--- !u!114 &1667247810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667247804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23dff42b29f98642b58c8efad7d11c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1667624475
 GameObject:
   m_ObjectHideFlags: 0
@@ -44937,7 +45014,7 @@ GameObject:
   - component: {fileID: 1668578720}
   m_Layer: 0
   m_Name: Bush_corner (13)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45213,7 +45290,7 @@ GameObject:
   - component: {fileID: 1674950381}
   m_Layer: 0
   m_Name: Bush_straight (12)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45833,7 +45910,7 @@ GameObject:
   - component: {fileID: 1690268271}
   m_Layer: 0
   m_Name: Bush_straight (5)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46073,7 +46150,7 @@ GameObject:
   - component: {fileID: 1699948445}
   m_Layer: 0
   m_Name: Bush_straight (7)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48516,7 +48593,7 @@ GameObject:
   - component: {fileID: 1789835390}
   m_Layer: 0
   m_Name: Bush_straight (13)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48614,7 +48691,7 @@ GameObject:
   - component: {fileID: 1791132275}
   m_Layer: 0
   m_Name: Bush_corner (3)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49843,7 +49920,7 @@ GameObject:
   - component: {fileID: 1823358964}
   m_Layer: 0
   m_Name: Bush_straight (26)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49986,7 +50063,7 @@ GameObject:
   - component: {fileID: 1831902224}
   m_Layer: 0
   m_Name: Bush_straight (20)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50083,7 +50160,7 @@ GameObject:
   - component: {fileID: 1834380734}
   m_Layer: 0
   m_Name: Bush_end (2)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50250,7 +50327,7 @@ GameObject:
   - component: {fileID: 1841515417}
   - component: {fileID: 1841515419}
   - component: {fileID: 1841515420}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: zone8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50988,7 +51065,7 @@ GameObject:
   - component: {fileID: 1868154120}
   m_Layer: 0
   m_Name: Bush_corner (26)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51432,7 +51509,7 @@ GameObject:
   - component: {fileID: 1898657896}
   m_Layer: 0
   m_Name: Bush_end (5)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51789,7 +51866,7 @@ GameObject:
   - component: {fileID: 1905307715}
   m_Layer: 0
   m_Name: Bush_end (7)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52430,7 +52507,7 @@ GameObject:
   - component: {fileID: 1925353073}
   m_Layer: 0
   m_Name: Bush_straight (6)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52644,7 +52721,7 @@ GameObject:
   - component: {fileID: 1935503576}
   m_Layer: 0
   m_Name: Bush_end (6)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53301,7 +53378,7 @@ GameObject:
   - component: {fileID: 1960134517}
   m_Layer: 0
   m_Name: Bush_straight (33)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53509,7 +53586,7 @@ GameObject:
   - component: {fileID: 1964337162}
   m_Layer: 0
   m_Name: Bush_end (3)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53899,7 +53976,7 @@ GameObject:
   - component: {fileID: 1971788202}
   m_Layer: 0
   m_Name: Bush_end (13)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54566,7 +54643,7 @@ GameObject:
   - component: {fileID: 2006570367}
   m_Layer: 0
   m_Name: Bush_end (18)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55104,7 +55181,7 @@ GameObject:
   - component: {fileID: 2040228051}
   m_Layer: 0
   m_Name: Bush_corner (16)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55632,7 +55709,7 @@ GameObject:
   - component: {fileID: 2055114744}
   m_Layer: 0
   m_Name: Bush_straight (1)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56012,7 +56089,7 @@ GameObject:
   - component: {fileID: 2059598024}
   m_Layer: 0
   m_Name: Bush_corner (29)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56331,7 +56408,7 @@ GameObject:
   - component: {fileID: 2083684121}
   m_Layer: 0
   m_Name: Bush_straight (37)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56824,7 +56901,7 @@ GameObject:
   - component: {fileID: 2090652667}
   m_Layer: 0
   m_Name: Bush_straight (35)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57987,7 +58064,7 @@ GameObject:
   - component: {fileID: 2118200591}
   m_Layer: 0
   m_Name: Bush_end (11)
-  m_TagString: Untagged
+  m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

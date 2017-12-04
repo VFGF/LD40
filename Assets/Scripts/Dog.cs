@@ -38,8 +38,9 @@ public class Dog : MonoBehaviour
 	{
 		RaycastHit2D hit = Physics2D.CircleCast(rayStart, 0.2f, Vector2.up, 0.0f, m_mask);
 		Debug.DrawRay(transform.position, Vector2.up * 0.1f, Color.blue);
-        if(hit.collider)
+        if(hit.collider.transform.CompareTag("Bush"))
         {
+            Debug.Log("Jumping is true");
             m_animator.SetBool("Jumping", true);
             transform.position = new Vector3(transform.position.x, jumpY, transform.position.z);
         }
@@ -68,7 +69,7 @@ public class Dog : MonoBehaviour
 		ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
 		if (bound)
 		{
-			print("what");
+			//print("what");
 			if(bound == m_zone)
 			{
 				Destroy(gameObject);

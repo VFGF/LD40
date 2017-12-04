@@ -16,6 +16,13 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject UI;
 
+    [SerializeField]
+    private GameObject graves;
+    [SerializeField]
+    private List<GameObject> graveList;
+    [SerializeField]
+    private GameObject treasureGrave;
+
     public bool gameOver = false;
 
     private GrimReaperManager grm;
@@ -36,6 +43,27 @@ public class GameManager : MonoBehaviour {
     {
         grm = GetComponent<GrimReaperManager>();
         RenderHealth();
+        StartCoroutine(LateStart());
+    }
+
+    IEnumerator LateStart ()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        if (graves == null)
+            GameObject.Find("Graves");
+
+        if (graveList.Count == 0)
+        {
+            foreach (Transform child in graves.transform)
+            {
+                graveList.Add(child.gameObject);
+            }
+        }
+
+        int index = Random.Range(0, graveList.Count - 1);
+        graveList[index].GetComponent<Grave>().isTreasure = true;
+        treasureGrave = graveList[index];
     }
 
     public void NewZone()

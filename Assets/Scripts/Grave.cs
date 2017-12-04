@@ -5,6 +5,7 @@ using UnityEngine;
 public class Grave : MonoBehaviour
 {
 	public Transform m_spawnObject;
+    public bool isTreasure = false;
 
 	void Dig()
 	{

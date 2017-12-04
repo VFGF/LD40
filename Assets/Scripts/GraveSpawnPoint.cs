@@ -10,7 +10,7 @@ public class GraveSpawnPoint : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         int index = Random.Range(0, graves.Length);
-        Instantiate(graves[index], transform.position, Quaternion.identity);
+        Instantiate(graves[index], transform.position, Quaternion.identity, transform.parent);
         Destroy(gameObject);
 	}
 

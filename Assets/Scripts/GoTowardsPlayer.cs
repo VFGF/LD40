@@ -22,6 +22,8 @@ public class GoTowardsPlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        transform.localScale = new Vector2(target.transform.position.x > transform.position.x ? -1f : 1f, 1f);
+        transform.position = transform.position + new Vector3(0.0f, Mathf.Sin(Time.time * 4f) / 150f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

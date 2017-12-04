@@ -45,7 +45,11 @@ public class GameManager : MonoBehaviour {
 
     public void GameOver()
     {
-        Debug.Log("Game Over");
+        if(!gameOver)
+        {
+            Debug.Log("Game Over");
+            gameOver = true;
+        }
     }
 
     public void LoseHealth()

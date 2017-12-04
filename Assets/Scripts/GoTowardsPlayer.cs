@@ -13,6 +13,8 @@ public class GoTowardsPlayer : MonoBehaviour {
     private bool hurtPlayer;
     [SerializeField]
     private int damage;
+    [SerializeField]
+    private bool isGrim = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +25,8 @@ public class GoTowardsPlayer : MonoBehaviour {
 	void Update () {
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         transform.localScale = new Vector2(target.transform.position.x > transform.position.x ? -1f : 1f, 1f);
-        transform.position = transform.position + new Vector3(0.0f, Mathf.Sin(Time.time * 4f) / 150f);
+        if(isGrim)
+            transform.position = transform.position + new Vector3(0.0f, Mathf.Sin(Time.time * 3f) / 250f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -52,12 +52,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1ab0f98c8bf7e45a2fea4912e1bc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 120
+  time: 20
   grimPrefab: {fileID: 1396127687142916, guid: 46ec363c94e4c6041bc10b7f6081d23f, type: 2}
   timeRunningOut: 0
   timeRunningOutPanel: {fileID: 0}
   colorPanel: {fileID: 0}
   musicPlayer: {fileID: 0}
+  zone0: {fileID: 0}
 --- !u!114 &114617523108787644
 MonoBehaviour:
   m_ObjectHideFlags: 1

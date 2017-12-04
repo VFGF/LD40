@@ -50,18 +50,18 @@ public class GameManager : MonoBehaviour {
 
     public void LoseHealth()
     {
-        health--;
-        RenderHealth();
-        if (health <= 0)
-            GameOver();
+        LoseHealth(1);
     }
 
     public void LoseHealth(int damage)
     {
-        health -= damage;
-        RenderHealth();
-        if (health <= 0)
-            GameOver();
+        if (!gameOver)
+        {
+            health -= damage;
+            RenderHealth();
+            if (health <= 0)
+                GameOver();
+        }
     }
 
     public void GainHealth()
@@ -72,19 +72,28 @@ public class GameManager : MonoBehaviour {
 
     public void RenderHealth()
     {
-        for (int i = 0; i < health; i++)
+        if (health >= 0)
         {
-            GameObject healthIcon = Instantiate(healthPrefab, UI.transform.position, Quaternion.identity, UI.transform);
+            foreach (GameObject healthIconObject in healthIconList)
+            {
+                Destroy(healthIconObject);
+            }
+            healthIconList.Clear();
 
-            RectTransform m_rectTransform;
-            m_rectTransform = healthIcon.GetComponent<RectTransform>();
+            for (int i = 0; i < health; i++)
+            {
+                GameObject healthIcon = Instantiate(healthPrefab, UI.transform.position, Quaternion.identity, UI.transform);
 
-            m_rectTransform.anchorMin = new Vector2(0f, 1f);
-            m_rectTransform.anchorMax = new Vector2(0f, 1f);
-            m_rectTransform.pivot = new Vector2(0f, 1f);
+                RectTransform m_rectTransform;
+                m_rectTransform = healthIcon.GetComponent<RectTransform>();
 
-            m_rectTransform.anchoredPosition = new Vector2(i * 100f + 10f, -10f);
-            healthIconList.Add(healthIcon);
+                m_rectTransform.anchorMin = new Vector2(0f, 1f);
+                m_rectTransform.anchorMax = new Vector2(0f, 1f);
+                m_rectTransform.pivot = new Vector2(0f, 1f);
+
+                m_rectTransform.anchoredPosition = new Vector2(i * 100f + 10f, -10f);
+                healthIconList.Add(healthIcon);
+            }
         }
     }
 }

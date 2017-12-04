@@ -51,3 +51,6 @@ TagManager:
   - name: Foreground
     uniqueID: 398334499
     locked: 0
+  - name: Dogs
+    uniqueID: 958609141
+    locked: 0

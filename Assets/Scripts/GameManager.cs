@@ -23,6 +23,13 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private List<GameObject> graveList;
     [SerializeField]
+    private GameObject treasureGrave;
+
+    [SerializeField]
+    private Npc snowman;
+
+    [SerializeField]
+    private Npc benjamin;
 
     public bool gameOver = false;
 
@@ -64,6 +71,10 @@ public class GameManager : MonoBehaviour {
 
         int index = Random.Range(0, graveList.Count - 1);
         graveList[index].GetComponent<Grave>().isTreasure = true;
+        treasureGrave = graveList[index];
+
+        snowman.m_text = snowman.m_text + treasureGrave.GetComponent<Grave>().type;
+        benjamin.m_text = benjamin.m_text + treasureGrave.GetComponent<Grave>().zone;
     }
 
     public void NewZone()

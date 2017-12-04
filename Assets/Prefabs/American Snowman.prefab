@@ -112,14 +112,14 @@ MonoBehaviour:
   m_nameText: {fileID: 0}
   m_dialogue: {fileID: 0}
   m_text: "You see that russian over there? I shot him. Boom. Dead. End of the cold
-    war. You wanna die too? Get outta' my face you maggot. \n\n\nAre you after the
-    treasure aswell? Go away. I don't have any clues to give you. \n\n\nOk, maybe
-    one. But I am not going to say it. Never. Why would I? \n\n\nWhat would I earn
-    for doing that? \n\n\n\nTelling you about the shape of the tombstone. Pfft, no
-    way man. Not gonna say it. \n\n\nI promise you, if there is something that I have
-    to say, you wouldn't know it.\n\n\n...\n\n\n\nWhy are you just standing there?
-    You really want it that bad?\n\n\n\nAre you sure?\n\n\n\nOk then. The tombstone
-    is in the shape of "
+    war. You wanna die too? Get outta' my face you maggot. \n\nAre you after the treasure
+    aswell? Go away. I don't have any clues to give you. \n\n\nOk, maybe one. But
+    I am not going to say it. Never. Why would I? \n\n\nWhat would I earn for doing
+    that? \n\n\n\nTelling you about the shape of the tombstone. Pfft, no way man.
+    Not gonna say it. \n\n\nI promise you, if there is something that I have to say,
+    you wouldn't know it.\n\n\n...\n\n\n\nWhy are you just standing there? You really
+    want it that bad?\n\n\n\nAre you sure?\n\n\n\nOk then. The tombstone is in the
+    shape of "
 --- !u!212 &212246200886106592
 SpriteRenderer:
   m_ObjectHideFlags: 1

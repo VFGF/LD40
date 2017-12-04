@@ -7,8 +7,8 @@ public class Grave : MonoBehaviour
     [SerializeField]
     private Transform[] m_spawnObjects;
     public bool isTreasure = false;
-    public enum TombstoneType { ROUNDED_TOP_EDGE, ROUNDED, SMALL_CROSS, CIRCULAR_CROSS, LARGE_CROSS }
-    public TombstoneType type;
+    [SerializeField]
+    public string type;
     public int zone = -1;
 
     private void Start()

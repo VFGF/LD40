@@ -97,7 +97,7 @@ MonoBehaviour:
   - {fileID: 4371712425084020, guid: be2382aef9092ee46a5d19e2e2666005, type: 2}
   - {fileID: 4342105767948052, guid: e226a5a41b5231b4e91e61cf88696e88, type: 2}
   isTreasure: 0
-  type: 0
+  type: a rounded, but pointy top.
   zone: 0
 --- !u!212 &212370184921134886
 SpriteRenderer:

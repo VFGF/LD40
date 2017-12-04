@@ -57,6 +57,7 @@ MonoBehaviour:
   timeRunningOut: 0
   timeRunningOutPanel: {fileID: 0}
   colorPanel: {fileID: 0}
+  musicPlayer: {fileID: 0}
 --- !u!114 &114617523108787644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,8 +70,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  maxHealth: 5
   healthPrefab: {fileID: 1076124331420478, guid: 9a19c1e995c6ef84fa9dc0df934484a5,
     type: 2}
   healthIconList: []
   UI: {fileID: 0}
+  graves: {fileID: 0}
+  graveList: []
+  treasureGrave: {fileID: 0}
   gameOver: 0

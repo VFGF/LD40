@@ -160,7 +160,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5f1c88ef9bd736e4783d6ee0771ac5fc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2899c6509ca60ec43847262b85a0cad8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -263,6 +263,7 @@ MonoBehaviour:
   killPlayer: 1
   hurtPlayer: 0
   damage: 0
+  isGrim: 1
 --- !u!114 &114228399764285170
 MonoBehaviour:
   m_ObjectHideFlags: 1

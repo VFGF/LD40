@@ -47,6 +47,8 @@ public class GrimReaperManager : MonoBehaviour
 
         if (grimReaper != null)
             Destroy(grimReaper);
+
+        musicPlayer.volume = 1f;
     }
 
     private void Update ()

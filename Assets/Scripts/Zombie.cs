@@ -6,6 +6,10 @@ using UnityEngine.AI;
 public class Zombie : MonoBehaviour
 {
     Transform m_target;
+    [SerializeField]
+    private float m_minSpeed;
+    [SerializeField]
+    private float m_maxSpeed;
 	float m_speed;
 	private SpriteRenderer m_sr;
 	public LayerMask m_collideMask;
@@ -31,7 +35,7 @@ public class Zombie : MonoBehaviour
 	{
 		m_target = GameObject.Find("Player").transform;
 		m_sr = GetComponent<SpriteRenderer>();
-		m_speed = Random.Range(0.5f, 1f);
+		m_speed = Random.Range(m_minSpeed, m_maxSpeed);
 		//StartCoroutine(lifeTimeEnd());
     }
 

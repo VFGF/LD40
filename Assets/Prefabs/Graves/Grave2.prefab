@@ -79,8 +79,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e3198042f0df34faa1aaa837619005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnObject: {fileID: 4576364697913328, guid: 85fa84f04ecd31e4ebf38143d7235a73,
-    type: 2}
+  m_spawnObjects:
+  - {fileID: 4576364697913328, guid: 85fa84f04ecd31e4ebf38143d7235a73, type: 2}
+  - {fileID: 4371712425084020, guid: be2382aef9092ee46a5d19e2e2666005, type: 2}
+  - {fileID: 4342105767948052, guid: e226a5a41b5231b4e91e61cf88696e88, type: 2}
   isTreasure: 0
   type: 1
   zone: 0

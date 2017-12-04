@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour {
 
     public void LoseHealth(int damage)
     {
-        health-= damage;
+        health -= damage;
         RenderHealth();
         if (health <= 0)
             GameOver();

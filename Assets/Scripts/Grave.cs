@@ -10,6 +10,7 @@ public class Grave : MonoBehaviour
 	void Dig()
 	{
 		Instantiate(m_spawnObject, transform.position, Quaternion.identity);
+		Instantiate(m_spawnObject, transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}
 }

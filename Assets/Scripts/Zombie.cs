@@ -21,15 +21,18 @@ public class Zombie : MonoBehaviour
     private GameObject graveSpawnPointPrefab;
 
 	public float m_health = 5.0f;
-    //[SerializeField]
-    //private float lifeTime = 30f;
+	//[SerializeField]
+	//private float lifeTime = 30f;
+
+	[SerializeField]
+	LayerMask m_otherEnemiesMask;
 
 	void Start()
 	{
 		m_target = GameObject.Find("Player").transform;
 		m_sr = GetComponent<SpriteRenderer>();
 		m_speed = Random.Range(0.5f, 1f);
-        //StartCoroutine(lifeTimeEnd());
+		//StartCoroutine(lifeTimeEnd());
     }
 
     /* Killing the zombie after a lifetime
@@ -65,6 +68,15 @@ public class Zombie : MonoBehaviour
 	void FixedUpdate()
 	{
 		m_targetPos = m_target.position;
+
+		// Push away other zombies
+		Collider2D result = Physics2D.OverlapCircle(transform.position, 0.3f, m_otherEnemiesMask);
+		if(result)
+		{
+			Vector2 dir = transform.position - result.transform.position;
+			dir.Normalize();
+			transform.position += (Vector3)dir * Time.fixedDeltaTime * 1.0f;
+		}
 	}
 
 	void Damage(float amount)

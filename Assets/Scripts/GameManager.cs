@@ -43,10 +43,25 @@ public class GameManager : MonoBehaviour {
         grm.ResetTimer();
     }
 
+    public void GameOver()
+    {
+        Debug.Log("Game Over");
+    }
+
     public void LoseHealth()
     {
         health--;
         RenderHealth();
+        if (health <= 0)
+            GameOver();
+    }
+
+    public void LoseHealth(int damage)
+    {
+        health-= damage;
+        RenderHealth();
+        if (health <= 0)
+            GameOver();
     }
 
     public void GainHealth()

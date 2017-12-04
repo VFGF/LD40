@@ -11,4 +11,18 @@ public class Brain : MonoBehaviour {
     {
         m_rm = GetComponent<RandomizedMovement>();
     }
+
+    private void OnTriggerEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag != "Player")
+        {
+            m_rm.direction = -m_rm.direction;
+            m_rm.FlipSprite();
+        }
+        else
+        {
+            Destroy(gameObject);
+            GameManager.instance.GainHealth();
+        }
+    }
 }

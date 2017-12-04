@@ -11,11 +11,20 @@ public class Dog : MonoBehaviour
 	SpriteRenderer m_sr;
 	public ZoneBound m_zone;
 
+    private Vector3 startPos;
+
+    private float jumpY;
+    private Vector3 rayStart;
+
 	void Start ()
 	{
 		m_animator = GetComponent<Animator>();
 		m_sr = GetComponent<SpriteRenderer>();
-	}
+
+        startPos = transform.position;
+        jumpY = startPos.y + 0.2f;
+        rayStart = new Vector3(transform.position.x, startPos.y, transform.position.z);
+    }
 	
 	void Update ()
 	{
@@ -26,12 +35,30 @@ public class Dog : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		RaycastHit2D hit = Physics2D.CircleCast(transform.position, 0.2f, Vector2.up, 0.0f, m_mask);
+		RaycastHit2D hit = Physics2D.CircleCast(rayStart, 0.2f, Vector2.up, 0.0f, m_mask);
 		Debug.DrawRay(transform.position, Vector2.up * 0.1f, Color.blue);
-		m_animator.SetBool("Jumping", hit.collider ? true : false);
+        if(hit.collider)
+        {
+            m_animator.SetBool("Jumping", true);
+            transform.position = new Vector3(transform.position.x, jumpY, transform.position.z);
+        }
+        else
+        {
+            Debug.Log("Jumping is false");
+            m_animator.SetBool("Jumping", false);
+            transform.position = new Vector3(transform.position.x, startPos.y, transform.position.z);
+        }
+		
 	}
 
-	void OnTriggerExit2D(Collider2D coll)
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        if(coll.transform.CompareTag("Player")) {
+            GameManager.instance.LoseHealth();
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D coll)
 	{
 		ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
 		if (bound)

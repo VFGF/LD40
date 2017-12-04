@@ -65,20 +65,4 @@ public class RandomizedMovement : MonoBehaviour {
             m_sr.flipX = false;
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (isBrain)
-        {
-            if (collision.transform.tag != "Player")
-            {
-                direction = -direction;
-				FlipSprite();
-			}
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-    }
 }

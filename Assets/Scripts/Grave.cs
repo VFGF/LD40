@@ -30,9 +30,9 @@ public class Grave : MonoBehaviour
 
 	void Dig()
 	{
-        int index = Random.Range(0, 2);
+        int index = Random.Range(0, 3);
 		Instantiate(m_spawnObjects[index], transform.position, Quaternion.identity);
-        index = Random.Range(0, 2);
+        index = Random.Range(0, 3);
         Instantiate(m_spawnObjects[index], transform.position, Quaternion.identity);
 		Destroy(gameObject);
 	}

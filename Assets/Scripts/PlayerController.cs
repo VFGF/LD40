@@ -101,8 +101,8 @@ public class PlayerController : MonoBehaviour
 
 	void Attack()
 	{
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, m_facingDir, m_attackDistance, m_attackMask);
-		Debug.DrawRay(transform.position, m_facingDir * m_attackDistance);
+		RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position + Vector2.up * 0.3f, m_facingDir, m_attackDistance, m_attackMask);
+		Debug.DrawRay((Vector2)transform.position + Vector2.up * 0.3f, m_facingDir * m_attackDistance);
 
 		float damage = 1.0f;
 		if(hit.collider)

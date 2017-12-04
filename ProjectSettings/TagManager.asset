@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Boundary
   - Bush
+  - Zone
   layers:
   - Default
   - TransparentFX

@@ -133,4 +133,9 @@ public class GameManager : MonoBehaviour {
             }
         }
     }
+
+    public void SpawnGrim()
+    {
+        grm.SpawnGrim();
+    }
 }

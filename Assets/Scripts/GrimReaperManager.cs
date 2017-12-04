@@ -22,6 +22,9 @@ public class GrimReaperManager : MonoBehaviour
     private Image colorPanel;
     private float fadeAmount = 0f;
 
+    [SerializeField]
+    private AudioSource musicPlayer;
+
 	Player m_player;
 
     private void Start()
@@ -71,7 +74,7 @@ public class GrimReaperManager : MonoBehaviour
         }
 	}
 
-    private void SpawnGrim()
+    public void SpawnGrim()
     {
 		float randomAngle = Random.value * 360.0f;
 		Vector2 spawnPos = new Vector2(Mathf.Cos(randomAngle * Mathf.Deg2Rad), Mathf.Sin(randomAngle * Mathf.Deg2Rad));
@@ -84,6 +87,8 @@ public class GrimReaperManager : MonoBehaviour
     private void FadeColorPanel()
     {
         fadeAmount += Time.deltaTime / 15f;
+        fadeAmount = Mathf.Clamp01(fadeAmount);
         colorPanel.color = Color.Lerp(new Color(0f,0f,0f,0f), new Color(0f,0f,0f,0.5f), fadeAmount);
+        musicPlayer.volume = 1f - fadeAmount;
     }
 }

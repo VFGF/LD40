@@ -79,4 +79,6 @@ MonoBehaviour:
   graves: {fileID: 0}
   graveList: []
   treasureGrave: {fileID: 0}
+  snowman: {fileID: 0}
+  benjamin: {fileID: 0}
   gameOver: 0

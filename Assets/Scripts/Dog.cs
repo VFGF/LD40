@@ -36,6 +36,8 @@ public class Dog : MonoBehaviour
 	{
 		rayStart = new Vector3(transform.position.x, startPos.y, transform.position.z);
 		RaycastHit2D hit = Physics2D.CircleCast(rayStart, 0.2f, Vector2.up, 0.0f, m_mask);
+		if (!hit.collider)
+			return;
         if(hit.collider.transform.CompareTag("Bush"))
         {
             m_animator.SetBool("Jumping", true);

@@ -24,7 +24,14 @@ public class Player : MonoBehaviour
 			m_camera.m_currentBounds = bound.m_collider;
 			m_currentZone = bound.m_collider;
 			ZoneBound.CurrentZone = bound;
-            GameManager.instance.NewZone();
 		}
 	}
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
+        if (bound)
+        {
+            GameManager.instance.NewZone();
+        }
+    }
 }

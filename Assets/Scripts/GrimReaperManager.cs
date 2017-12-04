@@ -25,7 +25,9 @@ public class GrimReaperManager : MonoBehaviour
     [SerializeField]
     private AudioSource musicPlayer;
 
-	Player m_player;
+	private Player m_player;
+    [SerializeField]
+    private BoxCollider2D zone0;
 
     private void Start()
     {
@@ -53,20 +55,23 @@ public class GrimReaperManager : MonoBehaviour
 
     private void Update ()
     {
-        if (!grimSpawned)
+        if (m_player.m_currentZone != zone0)
         {
-            time -= Time.deltaTime;
-
-            if (time <= 15f && time > 0f && !timeRunningOut)
+            if (!grimSpawned)
             {
-                timeRunningOut = true;
-                timeRunningOutPanel.SetActive(true);
+                time -= Time.deltaTime;
 
-            }
-            else if (time <= 0f)
-            {
-                SpawnGrim();
-                timeRunningOutPanel.SetActive(false);
+                if (time <= 15f && time > 0f && !timeRunningOut)
+                {
+                    timeRunningOut = true;
+                    timeRunningOutPanel.SetActive(true);
+
+                }
+                else if (time <= 0f)
+                {
+                    SpawnGrim();
+                    timeRunningOutPanel.SetActive(false);
+                }
             }
         }
 

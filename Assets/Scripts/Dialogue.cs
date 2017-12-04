@@ -30,7 +30,7 @@ public class Dialogue : MonoBehaviour
 	{
 		if(m_paused)
 		{
-			if (Input.GetAxisRaw("Enter") > 0.1f)
+			if (Input.GetKeyDown(KeyCode.E) || Input.GetAxisRaw("Enter") > 0.1f)
 			{
 				m_paused = false;
 				m_currentText = "";

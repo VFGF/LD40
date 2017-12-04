@@ -21,7 +21,6 @@ public class Player : MonoBehaviour
 		ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
 		if (bound && bound.m_collider != m_currentZone)
 		{
-			print("hur");
 			m_camera.m_currentBounds = bound.m_collider;
 			m_currentZone = bound.m_collider;
 			ZoneBound.CurrentZone = bound;

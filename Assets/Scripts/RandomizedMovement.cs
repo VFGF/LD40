@@ -20,14 +20,10 @@ public class RandomizedMovement : MonoBehaviour {
     [SerializeField]
     private bool isBrain;
 
-    private GameObject player;
-
     private void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
         m_sr = GetComponent<SpriteRenderer>();
-        player = GameObject.Find("Player");
-
         Randomize();
     }
 

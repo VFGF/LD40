@@ -15,6 +15,7 @@ public class Dog : MonoBehaviour
 
     private float jumpY;
     private Vector3 rayStart;
+    private bool hasHurtPlayer = false;
 
 	void Start ()
 	{
@@ -51,10 +52,14 @@ public class Dog : MonoBehaviour
 		
 	}
 
-    private void OnCollisionEnter2D(Collision2D coll)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
         if(coll.transform.CompareTag("Player")) {
-            GameManager.instance.LoseHealth();
+            if (!hasHurtPlayer)
+            {
+                GameManager.instance.LoseHealth();
+                hasHurtPlayer = true;
+            }
         }
     }
 

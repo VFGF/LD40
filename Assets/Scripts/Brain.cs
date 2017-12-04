@@ -6,6 +6,7 @@ using UnityEngine;
 public class Brain : MonoBehaviour {
 
     private RandomizedMovement m_rm;
+	bool m_pickedUp = false;
 
     void Start()
     {
@@ -21,8 +22,12 @@ public class Brain : MonoBehaviour {
         }
         else
         {
-            Destroy(gameObject);
-            GameManager.instance.GainHealth();
+			if(!m_pickedUp)
+			{
+				m_pickedUp = true;
+				GameManager.instance.GainHealth();
+				Destroy(gameObject);
+			}
         }
     }
 }

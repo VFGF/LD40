@@ -22,8 +22,11 @@ public class GrimReaperManager : MonoBehaviour
     private Image colorPanel;
     private float fadeAmount = 0f;
 
+	Player m_player;
+
     private void Start()
     {
+		m_player = FindObjectOfType<Player>();
         startTime = time;
         ResetTimer();
     }
@@ -51,7 +54,6 @@ public class GrimReaperManager : MonoBehaviour
 
             if (time <= 15f && time > 0f && !timeRunningOut)
             {
-                Debug.Log("Time is running out");
                 timeRunningOut = true;
                 timeRunningOutPanel.SetActive(true);
 
@@ -71,7 +73,11 @@ public class GrimReaperManager : MonoBehaviour
 
     private void SpawnGrim()
     {
-        grimReaper = Instantiate(grimPrefab, transform.position, Quaternion.identity);
+		float randomAngle = Random.value * 360.0f;
+		Vector2 spawnPos = new Vector2(Mathf.Cos(randomAngle * Mathf.Deg2Rad), Mathf.Sin(randomAngle * Mathf.Deg2Rad));
+		spawnPos *= 5.0f;
+		spawnPos += (Vector2)Camera.main.transform.position;
+        grimReaper = Instantiate(grimPrefab, spawnPos, Quaternion.identity);
         grimSpawned = true;
     }
 

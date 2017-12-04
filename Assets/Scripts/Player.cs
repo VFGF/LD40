@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-	public BoxCollider2D m_currentZone;
+	public BoxCollider2D m_currentZone = null;
 	public float m_zoneSkipDistance = 2.0f;
 	CameraController m_camera;
 
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 	void OnTriggerStay2D(Collider2D coll)
 	{
 		ZoneBound bound = coll.transform.GetComponent<ZoneBound>();
-		if (bound && bound != m_currentZone)
+		if (bound && bound.m_collider != m_currentZone)
 		{
 			m_camera.m_currentBounds = bound.m_collider;
 			m_currentZone = bound.m_collider;

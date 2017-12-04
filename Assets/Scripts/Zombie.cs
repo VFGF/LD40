@@ -13,7 +13,6 @@ public class Zombie : MonoBehaviour
 	float m_speed;
 	private SpriteRenderer m_sr;
 	public LayerMask m_collideMask;
-	Vector2 m_targetPos;
 	float m_knockbackTimer = 0.0f;
 	Vector2 m_knockbackDirection;
     [SerializeField]
@@ -71,8 +70,6 @@ public class Zombie : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		m_targetPos = m_target.position;
-
 		// Push away other zombies
 		Collider2D result = Physics2D.OverlapCircle(transform.position, 0.3f, m_otherEnemiesMask);
 		if(result)

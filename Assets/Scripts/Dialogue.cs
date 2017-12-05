@@ -76,6 +76,9 @@ public class Dialogue : MonoBehaviour
 		m_currentText = "";
 		m_donePrinting = false;
 		m_readCount = 0;
+		m_overflow = 0;
+		m_currentStart = 0;
+		m_timer = 0.0f;
 	}
 
 	public void ResetText()
@@ -84,5 +87,8 @@ public class Dialogue : MonoBehaviour
 		m_currentText = "";
 		m_text.text = "";
 		m_readCount = 0;
+		m_overflow = 0;
+		m_currentStart = 0;
+		m_timer = 0.0f;
 	}
 }

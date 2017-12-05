@@ -109,4 +109,12 @@ public class Zombie : MonoBehaviour
 		m_knockbackDirection = direction;
 		m_knockbackTimer = 0.2f;
 	}
+
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		if(coll.gameObject.layer == LayerMask.NameToLayer("Player"))
+		{
+			GameManager.instance.LoseHealth();
+		}
+	}
 }

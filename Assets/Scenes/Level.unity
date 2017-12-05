@@ -29999,7 +29999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_collider: {fileID: 0}
   m_spawnDogs: 1
-  m_dogRate: 0.2
+  m_dogRate: 0.4
   m_dogPrefab: {fileID: 114060429861600354, guid: e77a1719a2c801a4ca4fb51baec8332a,
     type: 2}
 --- !u!4 &885315444 stripped

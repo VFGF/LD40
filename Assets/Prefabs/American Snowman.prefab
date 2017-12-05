@@ -120,6 +120,8 @@ MonoBehaviour:
     you wouldn't know it.\n\n\n...\n\n\n\nWhy are you just standing there? You really
     want it that bad?\n\n\n\nAre you sure?\n\n\n\nOk then. The tombstone is in the
     shape of "
+  isBenjamin: 0
+  isSnowman: 1
 --- !u!212 &212246200886106592
 SpriteRenderer:
   m_ObjectHideFlags: 1

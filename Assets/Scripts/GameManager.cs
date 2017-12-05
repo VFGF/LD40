@@ -27,10 +27,11 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private Npc snowman;
+    private bool snowmanClueGiven = false;
 
     [SerializeField]
     private Npc benjamin;
-    private bool clueGiven = false;
+    private bool benjaminClueGiven = false;
 
     public bool gameOver = false;
 
@@ -73,13 +74,11 @@ public class GameManager : MonoBehaviour {
         int index = Random.Range(0, graveList.Count - 1);
         graveList[index].GetComponent<Grave>().isTreasure = true;
         treasureGrave = graveList[index];
-
-        snowman.m_text = snowman.m_text + treasureGrave.GetComponent<Grave>().type;
     }
 
     public void GetBenjaminClue()
     {
-        if (!clueGiven)
+        if (!benjaminClueGiven)
         {
             string zoneClue = "";
             int graveZone = treasureGrave.GetComponent<Grave>().zone;
@@ -120,7 +119,18 @@ public class GameManager : MonoBehaviour {
             }
             benjamin.m_text = benjamin.m_text + zoneClue + " Good luck finding it!";
 
-            clueGiven = true;
+            benjaminClueGiven = true;
+        }
+    }
+
+    public void GetSnowmanClue()
+    {
+        if(!snowmanClueGiven)
+        {
+            string shapeClue = "";
+            shapeClue = treasureGrave.GetComponent<Grave>().type;
+            snowman.m_text = snowman.m_text + shapeClue;
+            snowmanClueGiven = true;
         }
     }
 

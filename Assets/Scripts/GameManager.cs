@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour {
 
     private GrimReaperManager grm;
 
+	public bool m_inDialogue = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -76,6 +78,14 @@ public class GameManager : MonoBehaviour {
 
         snowman.m_text = snowman.m_text + treasureGrave.GetComponent<Grave>().type;
     }
+
+	void Update()
+	{
+		if(m_inDialogue)
+		{
+			grm.ResetTimer();
+		}
+	}
 
     public void GetBenjaminClue()
     {

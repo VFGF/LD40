@@ -42,7 +42,8 @@ public class Npc : MonoBehaviour
 			m_dialogue.gameObject.SetActive(true);
 			m_dialogue.PrintText(m_text);
             m_nameText.text = m_name;
-        }
+			GameManager.instance.m_inDialogue = true;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D coll)
@@ -51,6 +52,7 @@ public class Npc : MonoBehaviour
         {
 			m_dialogue.ResetText();
 			m_dialogue.gameObject.SetActive(false);
+			GameManager.instance.m_inDialogue = false;
         }
 	}
 }

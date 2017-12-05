@@ -55,7 +55,7 @@ public class Zombie : MonoBehaviour
 		}
 		else
 		{
-			Vector2 dir = (m_target.position - transform.position).normalized * m_speed;
+			Vector2 dir = (m_target.position - transform.position).normalized * m_speed * GameManager.instance.health;
 			transform.position += (Vector3)dir * Time.deltaTime;
 		}
 

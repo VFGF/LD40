@@ -14,6 +14,8 @@ public class Npc : MonoBehaviour
 	public string m_text;
 
     private BirdMan birdManScript;
+    [SerializeField]
+    private bool isBenjamin = false;
 
     private void Start()
     {
@@ -33,6 +35,10 @@ public class Npc : MonoBehaviour
 	{
         if (coll.transform.CompareTag("Player"))
         {
+            if(isBenjamin)
+            {
+                GameManager.instance.GetBenjaminClue();
+            }
 			m_dialogue.gameObject.SetActive(true);
 			m_dialogue.PrintText(m_text);
             m_nameText.text = m_name;

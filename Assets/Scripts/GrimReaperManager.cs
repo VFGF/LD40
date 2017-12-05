@@ -15,8 +15,6 @@ public class GrimReaperManager : MonoBehaviour
     private bool grimSpawned = false;
     [SerializeField]
     private bool timeRunningOut = false;
-    [SerializeField]
-    private GameObject timeRunningOutPanel;
 
     [SerializeField]
     private Image colorPanel;
@@ -44,9 +42,6 @@ public class GrimReaperManager : MonoBehaviour
         timeRunningOut = false;
         fadeAmount = 0f;
 
-        if(timeRunningOutPanel.activeSelf)
-            timeRunningOutPanel.SetActive(false);
-
         if (grimReaper != null)
             Destroy(grimReaper);
 
@@ -62,16 +57,9 @@ public class GrimReaperManager : MonoBehaviour
                 time -= Time.deltaTime;
 
                 if (time <= 15f && time > 0f && !timeRunningOut)
-                {
                     timeRunningOut = true;
-                    timeRunningOutPanel.SetActive(true);
-
-                }
                 else if (time <= 0f)
-                {
                     SpawnGrim();
-                    timeRunningOutPanel.SetActive(false);
-                }
             }
         }
 

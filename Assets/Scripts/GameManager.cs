@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private Npc benjamin;
+    private bool clueGiven = false;
 
     public bool gameOver = false;
 
@@ -74,7 +75,53 @@ public class GameManager : MonoBehaviour {
         treasureGrave = graveList[index];
 
         snowman.m_text = snowman.m_text + treasureGrave.GetComponent<Grave>().type;
-        benjamin.m_text = benjamin.m_text + treasureGrave.GetComponent<Grave>().zone;
+    }
+
+    public void GetBenjaminClue()
+    {
+        if (!clueGiven)
+        {
+            string zoneClue = "";
+            int graveZone = treasureGrave.GetComponent<Grave>().zone;
+            Debug.Log("Gravezone: " + graveZone);
+
+            switch (graveZone)
+            {
+                case 0:
+                    zoneClue = "where the crow keeps watch. Only a few tombstones there, by the fence.";
+                    break;
+                case 1:
+                    zoneClue = "in the maze, that shouldn't even be possible...";
+                    break;
+                case 2:
+                    zoneClue = "where my gallows point. Not too far from here.";
+                    break;
+                case 3:
+                    zoneClue = "very close. The excitement, it gives me chills down my spine!";
+                    break;
+                case 4:
+                    zoneClue = "in the evergreen forest. A very empty part of the graveyard unfortunately.";
+                    break;
+                case 5:
+                    zoneClue = "close to the house of God.";
+                    break;
+                case 6:
+                    zoneClue = "behind the church.";
+                    break;
+                case 7:
+                    zoneClue = "where two really cool guys are having a friendly debate over which economic system is good and which one is an evil virus of satan.";
+                    break;
+                case 8:
+                    zoneClue = "by the first road you traveled in this graveyard.";
+                    break;
+                case 9:
+                    zoneClue = "in the most populated part of the graveyard. Many of my best friends live there in fact. Just start digging, there's a lot of spots.";
+                    break;
+            }
+            benjamin.m_text = benjamin.m_text + zoneClue + " Good luck finding it!";
+
+            clueGiven = true;
+        }
     }
 
     public void NewZone()

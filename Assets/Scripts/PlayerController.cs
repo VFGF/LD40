@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour
 	void Update ()
 	{
 		HandleInput();
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            GameManager.instance.Reload();
+        }
 	}
 
 	void HandleInput()

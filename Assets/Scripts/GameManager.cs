@@ -154,7 +154,6 @@ public class GameManager : MonoBehaviour {
     {
         if(!gameOver)
         {
-            Debug.Log("Game Over");
             gameOver = true;
 			SceneManager.LoadScene("GameOver");
         }
@@ -215,5 +214,15 @@ public class GameManager : MonoBehaviour {
     public void SpawnGrim()
     {
         grm.SpawnGrim();
+    }
+
+    public void Win()
+    {
+        SceneManager.LoadScene("Win");
+    }
+
+    public void Reload()
+    {
+        SceneManager.LoadScene("Level");
     }
 }

@@ -55,7 +55,7 @@ public class Zombie : MonoBehaviour
 		}
 		else
 		{
-			Vector2 dir = (m_target.position - transform.position).normalized * m_speed;
+			Vector2 dir = (m_target.position - transform.position).normalized * m_speed * GameManager.instance.health;
 			transform.position += (Vector3)dir * Time.deltaTime;
 		}
 
@@ -108,5 +108,13 @@ public class Zombie : MonoBehaviour
 	{
 		m_knockbackDirection = direction;
 		m_knockbackTimer = 0.2f;
+	}
+
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		if(coll.gameObject.layer == LayerMask.NameToLayer("Player"))
+		{
+			GameManager.instance.LoseHealth();
+		}
 	}
 }

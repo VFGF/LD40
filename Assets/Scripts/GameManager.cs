@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour {
 
     private GrimReaperManager grm;
 
+	public bool m_inDialogue = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -75,6 +77,14 @@ public class GameManager : MonoBehaviour {
         graveList[index].GetComponent<Grave>().isTreasure = true;
         treasureGrave = graveList[index];
     }
+
+	void Update()
+	{
+		if(m_inDialogue)
+		{
+			grm.ResetTimer();
+		}
+	}
 
     public void GetBenjaminClue()
     {

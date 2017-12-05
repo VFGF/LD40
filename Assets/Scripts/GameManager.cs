@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(GrimReaperManager))]
@@ -155,6 +156,7 @@ public class GameManager : MonoBehaviour {
         {
             Debug.Log("Game Over");
             gameOver = true;
+			SceneManager.LoadScene("GameOver");
         }
     }
 

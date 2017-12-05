@@ -16,6 +16,8 @@ public class Npc : MonoBehaviour
     private BirdMan birdManScript;
     [SerializeField]
     private bool isBenjamin = false;
+    [SerializeField]
+    private bool isSnowman = false;
 
     private void Start()
     {
@@ -38,6 +40,10 @@ public class Npc : MonoBehaviour
             if(isBenjamin)
             {
                 GameManager.instance.GetBenjaminClue();
+            }
+            if(isSnowman)
+            {
+                GameManager.instance.GetSnowmanClue();
             }
 			m_dialogue.gameObject.SetActive(true);
 			m_dialogue.PrintText(m_text);

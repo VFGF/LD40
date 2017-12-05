@@ -59,7 +59,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.24
+  m_Radius: 1
 --- !u!61 &61444493341760064
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -141,6 +141,8 @@ MonoBehaviour:
     \u200B\u200B\u0434\u0435\u0440\u0436\u0438\u0442 \u0437\u0443\u0431\u044B \u043E\u0442
     \u043C\u043E\u0435\u0433\u043E \u0436\u0438\u0432\u043E\u0442\u0430, \u0435\u0441\u043B\u0438
     \u0443 \u043C\u0435\u043D\u044F \u0435\u0441\u0442\u044C."
+  isBenjamin: 0
+  isSnowman: 0
 --- !u!212 &212774992167927252
 SpriteRenderer:
   m_ObjectHideFlags: 1
